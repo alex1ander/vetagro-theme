@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/news.css">
+    <link rel="stylesheet" href="./assets/table.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+<nav class="desktop">
+    <div class="content">
+        <div class="top-menu-block">
+            <ul class="top-menu">
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Новини</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Бренди</a></li>
+                <li><a href="#">Доставка та оплата</a></li>
+                <li><a href="#">Обмін і повернення</a></li>
+            </ul>
+
+            <div class="support-block">
+                <div class="contact-phone">
+                    <a href="tel:+38 (067) 673 16 67">+38 (067) 673 16 67</a>
+                </div>
+                <div class="language-select">
+                    <span>Мова</span>
+                    <span class="flag"><img src="./icon/Ukraine (UA).svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<header>
+    <div class="content header-content">
+        <div class="header-block desktop">
+
+            <img src="./images/logo.png" alt="">
+
+
+            <div class="main-menu-block">
+                <ul class="main-menu">
+                    <li><a href="#">Для птиці</a></li>
+                    <li><a href="#">Для свиней</a></li>
+                    <li><a href="#">Для ВРХ</a></li>
+                    <li><a href="#">Обладнання</a></li>
+                    <li><a href="#">Біобезпека</a></li>
+                </ul>
+            </div>
+
+            <div class="header-shop-panel">
+                <div class="header-shop-block">
+                    <div class="header-search desktop">
+                        <input class="header-search-input" type="text" placeholder="Пошук">
+                    </div>
+                    <div class="header-shop-buttons">
+                        <span><img src="./icon/favorite.svg" alt=""></span>
+                        <span><img src="./icon/person.svg" alt=""></span>
+                        <span>
+                            <img class="showCart" src="./icon/shopping_cart.svg" alt="">
+                        </span>
+                        <span class="close-btn mobile">
+                            <img class="showClose" src="./icon/x.svg" alt="">
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="header-block mobile">
+
+            <div class="main-menu-block ">
+                <nav class="main-nav hamburger-menu">
+
+                      <input id="menu__toggle" type="checkbox" />
+                      <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                      </label>
+                    
+
+                        <div class="menu__box">
+
+                            <div class="header-block mobile  menu-mobile">
+
+                                <div class="header-shop-block">
+                                    <div class="header-shop-buttons">
+                                        <span><img src="./icon/person.svg" alt=""><span class="person-title">Увійти до кабінету</span></span>
+                                        <span><img src="./icon/favorite.svg" alt=""></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <div class="header-search mobile">
+                                <input class="header-search-input" type="text" placeholder="Пошук">
+                            </div>
+                            <div class="mobile-menus-place">
+                                <div class="place-for-mobile-menu">
+                                    <div class="content">
+                                        <h3>Каталог товарів</h3>
+                                        <ul class="main-menu">
+                                            <li><a href="#">Для птиці</a></li>
+                                            <li><a href="#">Для свиней</a></li>
+                                            <li><a href="#">Для ВРХ</a></li>
+                                            <li><a href="#">Обладнання</a></li>
+                                            <li><a href="#">Біобезпека</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="place-for-mobile-menu">
+                                    <div class="content">
+                                        <h3>Інформація</h3>
+                                        <ul class="support-menu">
+                                            <li><a href="#">Про нас</a></li>
+                                            <li><a href="#">Новини</a></li>
+                                            <li><a href="#">Контакти</a></li>
+                                            <li><a href="#">Бренди</a></li>
+                                            <li><a href="#">Доставка та оплата</a></li>
+                                            <li><a href="#">Обмін і повернення</a></li>
+                                        </ul>
+                                        <div class="language-select">
+                                            <span>Мова</span>
+                                            <span class="flag"><img src="./icon/Ukraine (UA).svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                </nav>
+            </div>
+
+
+            <img src="./images/logo.png" alt="">
+
+            <div class="header-shop-panel">
+                <div class="header-shop-block">
+                    <div class="header-shop-buttons">
+                        <span>
+                            <img class="showCart" src="./icon/shopping_cart.svg" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</header>
+<script>
+    document.querySelector('.close-btn').addEventListener('click', function() {
+        this.classList.toggle('active');
+    });
+</script>
+
+<section class="breadcrumb_section section_block"></section>
+    <div class="content">
+        <nav id="breadcrumbs">
+            <span>
+                <a href="#">Головна</a> › 
+                <span class="breadcrumb_last" aria-current="page">Новини</span>
+            </span>
+        </nav>
+    </div>
+</section>
+
+
+
+<section id="checkout-section" class="section_block">
+    <div class="content">
+        <div class="news-grid">
+
+            <div class="content-block">
+                <h1>Лікування діареї у телят</h1>
+                <div class="post-date mt-10 mb-20">12.07.2024</div>
+
+                <p>За статистикою в середньому 12,5% телят гине в період від народження до 14- денного віку. Діарея є основною причиною смерті молодих телят до відлучення (56%).  Іноді причиною діареї є неправильне харчування. Але зазвичай причиною є один або комбінація чотирьох інфекційних організмів: бактерії E. coli, рота та коронавіруси та одноклітинний паразит Cryptosporidium parvum. Останнім часом саме криптоспоридіоз все найчастіше виявляється  причиною діареї, що зазвичай викликає симптоми діареї приблизно на 7 – 15 день життя. Криптоспоридіоз часто виникає після інфекції Rota або в поєднанні з нею. Окрім аспекту добробуту та можливих фінансових втрат теляти, це призводить до відставання росту, який часто не помічають.</p>
+                
+                <h2 >Заголовок</h2>
+                <p>За статистикою в середньому 12,5% телят гине в період від народження до 14- денного віку. Діарея є основною причиною смерті молодих телят до відлучення (56%).  Іноді причиною діареї є неправильне харчування. Але зазвичай причиною є один або комбінація чотирьох інфекційних організмів: бактерії E. coli, рота та коронавіруси та одноклітинний паразит Cryptosporidium parvum. Останнім часом саме криптоспоридіоз все найчастіше виявляється  причиною діареї, що зазвичай викликає симптоми діареї приблизно на 7 – 15 день життя. Криптоспоридіоз часто виникає після інфекції Rota або в поєднанні з нею. Окрім аспекту добробуту та можливих фінансових втрат теляти, це призводить до відставання росту, який часто не помічають.</p>
+                
+                <h3>Підзаголовок</h3>
+
+                <p>За статистикою в середньому 12,5% телят гине в період від народження до 14- денного віку. Діарея є основною причиною смерті молодих телят до відлучення (56%).  Іноді причиною діареї є неправильне харчування. Але зазвичай причиною є один або комбінація чотирьох інфекційних організмів: бактерії E. coli, рота та коронавіруси та одноклітинний паразит Cryptosporidium parvum. Останнім часом саме криптоспоридіоз все найчастіше виявляється  причиною діареї, що зазвичай викликає симптоми діареї приблизно на 7 – 15 день життя. Криптоспоридіоз часто виникає після інфекції Rota або в поєднанні з нею. Окрім аспекту добробуту та можливих фінансових втрат теляти, це призводить до відставання росту, який часто не помічають.</p>
+                <img src="./images/news1.png" alt="">
+
+                <h4>Підпідзаголовок</h4>
+                <p>За статистикою в середньому 12,5% телят гине в період від народження до 14- денного віку. Діарея є основною причиною смерті молодих телят до відлучення (56%).  Іноді причиною діареї є неправильне харчування. Але зазвичай причиною є один або комбінація чотирьох інфекційних організмів: бактерії E. coli, рота та коронавіруси та одноклітинний паразит Cryptosporidium parvum. Останнім часом саме криптоспоридіоз все найчастіше виявляється  причиною діареї, що зазвичай викликає симптоми діареї приблизно на 7 – 15 день життя. Криптоспоридіоз часто виникає після інфекції Rota або в поєднанні з нею. Окрім аспекту добробуту та можливих фінансових втрат теляти, це призводить до відставання росту, який часто не помічають.</p>
+                <img src="./images/news2.png" alt="">
+
+
+                    <div class="place-for-post-table">
+                        <table class="post-table">
+                            <thead>
+                                <tr>
+                                    <th>Найменування</th>
+                                    <th>Найменування</th>
+                                    <th>Найменування</th>
+                                    <th>Найменування</th>
+                                    <th>Найменування</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                                <tr>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                    <td>Значення</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <h4>Підпідзаголовок</h4>
+                    <p>За статистикою в середньому 12,5% телят гине в період від народження до 14- денного віку. Діарея є основною причиною смерті молодих телят до відлучення (56%).  Іноді причиною діареї є неправильне харчування. Але зазвичай причиною є один або комбінація чотирьох інфекційних організмів: бактерії E. coli, рота та коронавіруси та одноклітинний паразит Cryptosporidium parvum. Останнім часом саме криптоспоридіоз все найчастіше виявляється  причиною діареї, що зазвичай викликає симптоми діареї приблизно на 7 – 15 день життя. Криптоспоридіоз часто виникає після інфекції Rota або в поєднанні з нею. Окрім аспекту добробуту та можливих фінансових втрат теляти, це призводить до відставання росту, який часто не помічають.</p>
+
+                    <div class="other-news-btns mt-40">
+                        <a href="#" class="news-before small-title-green fw-700">Попередня стаття</a>
+                        <a href="#" class="news-after small-title-green fw-700">Наступна стаття</a>
+                    </div>
+
+            </div>
+
+
+
+            <div class="post-sidebar">
+                <div class="information-block">
+                    <div class="other-news">
+                        <h4>Інші статті</h4>
+                        
+                        <div class="other-news-post mt-20">
+                            <p class="other-news-title">Використання Глобамакс Б 700 на підсисних поросятах</p>
+                            <div class="post-date mt-10 mb-20">12.07.2024</div>
+                        </div>
+
+                        <div class="other-news-post mt-20">
+                            <p class="other-news-title">Використання Глобамакс Б 700 на підсисних поросятах</p>
+                            <div class="post-date mt-10 mb-20">12.07.2024</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+
+<!-- //footer -->
+<footer>
+    <div class="content footer-content">
+        <div class="top-part-footer grid-footer-top">
+
+            <div class="footer-col-top">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <span class="text-after-logo">Приєднуйтесь до нас 
+                    в соцмережах</span>
+                <div class="useful-links">
+                    <a href="#"><img src="./icon/f1.svg" alt=""></a>
+                    <a href="#"><img src="./icon/f2.svg" alt=""></a>
+                </div>
+            </div>
+
+
+            <div class="footer-col-top">
+                <span class="menu-title">Каталог</span>
+                <ul class="">
+                    <li><a href="#">Для птиці</a></li>
+                    <li><a href="#">Для свиней</a></li>
+                    <li><a href="#">Для ВРХ</a></li>
+                    <li><a href="#">Обладнання</a></li>
+                    <li><a href="#">Біобезпека</a></li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="footer-col-top">
+                <span class="menu-title">Про магазин</span>
+                <ul class="">
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Бренди</a></li>
+                    <li><a href="#">Новини</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-top">
+                <span class="menu-title">Інформація</span>
+                <ul class="">
+                    <li><a href="#">Обмін і повернення</a></li>
+                    <li><a href="#">Доставка та оплата</a></li>
+                    <li><a href="#">Програма лояльності</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-top">
+                <span class="menu-title">Зв’язатися з нами</span>
+
+                <div class="footer-contact-us">
+                    <span class="adress">
+                        81130, Україна, Львівська обл., 
+                        с.Сокільники, вул.Львівська бічна, 3
+                    </span>
+                    <span class="email">
+                        info@vetagro.com.ua
+                    </span>
+                    <span class="tel">
+                        +38 (067) 673 16 67
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="bottom-part-footer">
+            <div class="bottom-left-part-footer">
+                <span>
+                    <a href="#">Політика конфіденційності</a>
+                </span>
+                <span>
+                    <a href="#">Договір публічної оферти</a>
+                </span>
+            </div>
+            <div class="bottom-right-part-footer">
+                <img src="./images/by_sofenty.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>

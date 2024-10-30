@@ -1,0 +1,402 @@
+.information-block.for-table{
+    padding: 0;
+}
+
+
+.yellow-table{
+    /* min-width: 600px; */
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.yellow-table thead{
+    background: #FBF5E1;
+    height: 46px;
+}
+
+.yellow-table thead th{
+    color: #606060;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    padding-bottom: 10px;
+    padding: 15px;
+}
+
+
+.yellow-table .product-card{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.yellow-table tbody td,.yellow-table thead th{
+    padding-top: 20px;
+    white-space: nowrap;
+    padding: 0 30px;
+}
+
+.yellow-table tbody td{
+    padding-bottom: 20px;
+}
+
+.yellow-table .product-block-box{
+    max-width: 72px;
+    max-height: 72px;
+    width: 72px;
+    height: 72px;
+}
+
+.yellow-table .bottom-text-box{
+    display: flex;
+    align-items: center;
+}
+
+.yellow-table th:first-child,.yellow-table td.product-name{
+    /* padding-left: 30px; */
+}
+
+.yellow-table th:last-child,.yellow-table td:last-child{
+    /* padding-right: 30px; */
+}
+.product-name{
+    width: 100%;
+}
+.product-table-sum{
+    -webkit-box-shadow: 0px -1px 0px 0px #D6D6D6;
+    -moz-box-shadow: 0px -1px 0px 0px #D6D6D6;
+    box-shadow: 0px -1px 0px 0px #D6D6D6;
+}
+
+.product-table-grid:first-child td{
+    padding-top: 20px;
+}
+tr td.checkout-sum{
+    padding-top: 20px;
+}
+
+.checkout-sum{
+    text-align: right!important;
+}
+
+
+
+@media screen and (max-width: 1000px){
+    .yellow-table thead{
+        display: none;
+    }
+    .product-table-grid {  display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "product-name product-name product-name"
+        "product-current-price product-count product-all-price";
+        position: relative;
+        align-items: end;
+        padding: 10px!important;
+    }
+    
+    .product-current-price { grid-area: product-current-price; }
+    
+    .product-count { grid-area: product-count; }
+    
+    .product-all-price { grid-area: product-all-price; }
+    
+    .product-name { grid-area: product-name;  }
+
+    .product-remove{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+
+    .product-table-grid{
+        -webkit-box-shadow: 0px 1px 0px 0px #D6D6D6;
+        -moz-box-shadow: 0px 1px 0px 0px #D6D6D6;
+        box-shadow: 0px 1px 0px 0px #D6D6D6;
+    }
+
+    .product-table-sum{
+        -webkit-box-shadow: unset;
+        -moz-box-shadow: unset;
+        box-shadow: unset;
+    }
+    tr.product-table-sum{
+
+        display: flex;
+        justify-content: flex-end;
+        margin: 10px;
+    }
+    .yellow-table tbody td, .yellow-table thead th{
+        padding: 0px;
+    }
+
+    .product-count{
+        text-align: center;
+    }
+    .product-all-price{
+        text-align: right;
+    }
+
+    .product-current-price:before{
+        content: 'Ціна';
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+    
+    .product-all-price:before{
+        content: 'Сума';
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px;
+    }
+    .yellow-table span{
+        font-size: 14px;
+    }
+}
+
+
+
+
+
+
+.personal-table{
+    border-spacing: 0px 6px;
+}
+
+.personal-table tr td:first-child{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    color:#909090;
+    padding-right: 20px;
+}
+
+.personal-table tr td:last-child{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+@media screen and (max-width: 500px){
+    .personal-table tr{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 1000px){
+    .grid-discount{
+        grid-template-columns: 1fr;
+    }
+    .yellow-bg{
+        background: #FBF5E1;
+        -webkit-box-shadow: 0px -200px 0px 200px #FBF5E1;
+        -moz-box-shadow: 0px -200px 0px 200px #FBF5E1;
+        box-shadow: 0px -200px 0px 200px #FBF5E1;
+        padding-bottom: 20px;
+    }
+    .personal-discount {
+        padding-left: 30px;
+    }
+
+    .personal-discount::before{
+        display: none;
+    }
+    .sum-count-products,.after-discount-procent{
+        text-align: left;
+    }
+    .grid-personal-tables{
+        grid-template-columns: 1fr;
+    }
+    .email-subscribe{
+        flex-direction: column;
+    }
+}
+
+.yellow-table tbody tr.order-table-grid td, .yellow-table thead tr.order-table-grid th{
+    padding: 20px;
+}
+td.order-btns{
+    width: 100%;
+}
+.info-order-btns{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.info-order-btns .green-btn{
+    width: 100%;
+}
+.orange-date{
+    color:#fff;
+    background: #EFA971;
+    border-radius: 40px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 6px 12px;
+
+}
+
+
+
+.order-table-grid{
+    -webkit-box-shadow: 0px 1px 0px 0px #D6D6D6;
+    -moz-box-shadow: 0px 1px 0px 0px #D6D6D6;
+    box-shadow: 0px 1px 0px 0px #D6D6D6;
+}
+
+@media screen and (max-width: 1000px){
+    .yellow-table thead{
+        display: none;
+    }
+    .order-table-grid { 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px 10px;
+        grid-auto-flow: row;
+        grid-template-areas:
+        "order-date order-date order-date"
+        "order-code order-count order-sum"
+        "order-btns order-btns order-btns";
+        position: relative;
+        align-items: end;
+        padding: 20px;
+    }
+    
+    .order-date { grid-area: order-date; }
+    
+    .order-code { grid-area: order-code; }
+    
+    .order-count { grid-area: order-count; }
+    
+    .order-sum { grid-area: order-sum; }
+
+    .order-btns { grid-area: order-btns; }
+
+
+    .order-code:before { 
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px; 
+    }
+    
+    .order-count:before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px; 
+    }
+    
+    .order-sum:before {
+        content: attr(data-label);
+        font-weight: bold;
+        display: block;
+        margin-bottom: 5px;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 16px; 
+    }
+
+    .yellow-table tbody tr.order-table-grid td, .yellow-table thead tr.order-table-grid th{
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .info-order-btns{
+        flex-direction: column;
+    }
+}
+
+
+/*  post-table */
+
+
+.place-for-post-table{
+    max-width: calc(100vw - 20px); /* Максимальная ширина контейнера */
+    overflow-x: auto; /* Горизонтальная прокрутка при необходимости */
+    position: relative;
+    padding-bottom: 10px;
+}
+
+
+.place-for-post-table::-webkit-scrollbar-track
+{
+	border-radius: 10px;
+	background-color: #D6D6D6;
+}
+
+.place-for-post-table::-webkit-scrollbar
+{
+	height: 4px;
+	background-color:#D6D6D6;
+}
+
+.place-for-post-table::-webkit-scrollbar-thumb
+{
+	border-radius: 8px;
+	background-color: #EFA971;
+}
+
+
+.table-border{
+    
+}
+.post-table{
+    border: 1px solid #D6D6D6;
+    width: 100%;
+    border-collapse: separate;
+    table-layout: fixed;
+    border-spacing: 0 0px;
+    min-width: 800px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.post-table thead{
+    background: #FBF5E1;
+    height: 46px;
+}
+
+.post-table thead th{
+    color: #606060;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+
+}
+
+.post-table tbody td{
+    color: #606060;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+}
+.post-table tbody tr{
+    -webkit-box-shadow: 0px -1px 0px 0px #D6D6D6;
+    -moz-box-shadow: 0px -1px 0px 0px #D6D6D6;
+    box-shadow: 0px -1px 0px 0px #D6D6D6;
+}

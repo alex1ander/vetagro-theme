@@ -1,0 +1,140 @@
+.pop-up-block{
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+}
+
+.w50p-10{
+    width: calc(50% - 10px);
+}
+
+.form-main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+form label{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+form input{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 44px;
+    border: 1px solid #D6D6D6;
+    border-radius: 12px;
+    padding: 0 1em;
+    width: 100%;
+}
+
+
+.form-field-block{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.place-for-input{
+    display: flex;
+    gap: 20px;
+}
+.two-col .form-field-block{
+    width: 100%;
+}
+
+.form-checkout-radio{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-checkout-radio .place-for-radio{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form-checkout-radio .sub-title{
+    color: #0E9940;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 16px;
+    margin-left: auto;
+}
+
+
+
+@media screen and (max-width: 700px){
+    .place-for-input{
+        flex-direction: column;
+    }
+    .form-field-block{
+        width: 100%!important;
+    }
+
+    .service-to-login{
+        flex-direction: column;
+    }
+    .price-delivery-d-none{
+        display: none;
+    }
+    .mw-280{
+        min-width: unset;
+    }
+}
+
+
+.pop-up-block .service-to-login{
+    flex-direction: column;
+}
+
+
+.service-to-login{
+    padding-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.forgot-password{
+    font-size: 12px;
+    line-height: 2em;
+}
+
+.show-password{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.toggle-password{
+    display: flex;
+    align-items: center;
+}
+.show-password .toggle-password:after{
+    content: url(../icon/eye.svg);
+    position: absolute;
+    right: 10px;
+    margin: auto;
+}
+
+form textarea{
+    border-radius: 12px;
+    border: 1px solid #D6D6D6;
+    min-height: 134px;
+    max-width: 100%;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 44px;
+    padding: 0 1em;
+    width: 100%!important;
+}

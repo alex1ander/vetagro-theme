@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/lk.css">
+    <link rel="stylesheet" href="./assets/input.css">
+    <link rel="stylesheet" href="./assets/form.css">
+    <link rel="stylesheet" href="./assets/table.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+<nav class="desktop">
+    <div class="content">
+        <div class="top-menu-block">
+            <ul class="top-menu">
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Новини</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Бренди</a></li>
+                <li><a href="#">Доставка та оплата</a></li>
+                <li><a href="#">Обмін і повернення</a></li>
+            </ul>
+
+            <div class="support-block">
+                <div class="contact-phone">
+                    <a href="tel:+38 (067) 673 16 67">+38 (067) 673 16 67</a>
+                </div>
+                <div class="language-select">
+                    <span>Мова</span>
+                    <span class="flag"><img src="./icon/Ukraine (UA).svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<header>
+    <div class="content header-content">
+        <div class="header-block desktop">
+
+            <img src="./images/logo.png" alt="">
+
+
+            <div class="main-menu-block">
+                <ul class="main-menu">
+                    <li><a href="#">Для птиці</a></li>
+                    <li><a href="#">Для свиней</a></li>
+                    <li><a href="#">Для ВРХ</a></li>
+                    <li><a href="#">Обладнання</a></li>
+                    <li><a href="#">Біобезпека</a></li>
+                </ul>
+            </div>
+
+            <div class="header-shop-panel">
+                <div class="header-shop-block">
+                    <div class="header-search desktop">
+                        <input class="header-search-input" type="text" placeholder="Пошук">
+                    </div>
+                    <div class="header-shop-buttons">
+                        <span><img src="./icon/favorite.svg" alt=""></span>
+                        <span><img src="./icon/person.svg" alt=""></span>
+                        <span>
+                            <img class="showCart" src="./icon/shopping_cart.svg" alt="">
+                        </span>
+                        <span class="close-btn mobile">
+                            <img class="showClose" src="./icon/x.svg" alt="">
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="header-block mobile">
+
+            <div class="main-menu-block ">
+                <nav class="main-nav hamburger-menu">
+
+                      <input id="menu__toggle" type="checkbox" />
+                      <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                      </label>
+                    
+
+                        <div class="menu__box">
+
+                            <div class="header-block mobile  menu-mobile">
+
+                                <div class="header-shop-block">
+                                    <div class="header-shop-buttons">
+                                        <span><img src="./icon/person.svg" alt=""><span class="person-title">Увійти до кабінету</span></span>
+                                        <span><img src="./icon/favorite.svg" alt=""></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <div class="header-search mobile">
+                                <input class="header-search-input" type="text" placeholder="Пошук">
+                            </div>
+                            <div class="mobile-menus-place">
+                                <div class="place-for-mobile-menu">
+                                    <div class="content">
+                                        <h3>Каталог товарів</h3>
+                                        <ul class="main-menu">
+                                            <li><a href="#">Для птиці</a></li>
+                                            <li><a href="#">Для свиней</a></li>
+                                            <li><a href="#">Для ВРХ</a></li>
+                                            <li><a href="#">Обладнання</a></li>
+                                            <li><a href="#">Біобезпека</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="place-for-mobile-menu">
+                                    <div class="content">
+                                        <h3>Інформація</h3>
+                                        <ul class="support-menu">
+                                            <li><a href="#">Про нас</a></li>
+                                            <li><a href="#">Новини</a></li>
+                                            <li><a href="#">Контакти</a></li>
+                                            <li><a href="#">Бренди</a></li>
+                                            <li><a href="#">Доставка та оплата</a></li>
+                                            <li><a href="#">Обмін і повернення</a></li>
+                                        </ul>
+                                        <div class="language-select">
+                                            <span>Мова</span>
+                                            <span class="flag"><img src="./icon/Ukraine (UA).svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                </nav>
+            </div>
+
+
+            <img src="./images/logo.png" alt="">
+
+            <div class="header-shop-panel">
+                <div class="header-shop-block">
+                    <div class="header-shop-buttons">
+                        <span>
+                            <img class="showCart" src="./icon/shopping_cart.svg" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</header>
+<script>
+    document.querySelector('.close-btn').addEventListener('click', function() {
+        this.classList.toggle('active');
+    });
+</script>
+
+  
+
+
+<section id="checkout-section" class="section_block">
+    <div class="content">
+        <div class="grid-personal-cabinet">
+
+            <div class="cabinet-menu desktop">
+                <ul class="">
+                    <li><a class="active" href="#">Персональні дані</a></li>
+                    <li><a href="#">Мої замовлення</a></li>
+
+                    <li><a href="#">Обрані товари</a></li>
+                    <li><a href="#">Товари в очікуванні</a></li>
+                </ul>
+
+            </div>
+
+            <div class="cabinet-block">
+                <div class="block-titles">
+                    <div class="cabinet-titles-mobile">
+                        <h1 class="open-menu">Персональні дані</h1>
+                        <div class="mobile">
+                            <ul class="cabinet-menu-mobile  mt-10">
+                                <li><a href="#">Мої замовлення</a></li>
+                                <li><a href="#">Обрані товари</a></li>
+                                <li><a href="#">Товари в очікуванні</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <script>
+                        document.querySelector('.block-titles h1').addEventListener('click', function() {
+                            this.classList.toggle('active');
+                        });
+                    </script>
+                </div>
+
+                <div class="information-block personal-discount">
+                    <div class="grid-discount">
+                        <div class="left-part yellow-bg">
+                            <h4 class="title-with-flex">Моя персональна знижка — <span class="title-big"> 10%</span></h4>
+                            <a class="small-title-green" style="text-decoration: underline;">Як працює програма лояльності?</a>
+                        </div>
+                        <div class="right-part">
+                            <p class="after-discount-procent">Отримайте знижку 15%, зробивши покупки на загальну суму 20 000 грн</p>
+                            <p class="sum-count-products">Сума здійснених покупок - 12 748.90 грн </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="information-block">
+                    <div class="grid-personal-tables">
+
+                        <div class="table-block">
+                            <h3 class="title-with-flex">Особисті дані <img class="edit" src="./icon/edit_square.svg" alt=""></h3>
+                            <table class="personal-table mt-20">
+                                <tbody>
+                                    <tr>
+                                        <td>Ім’я та прізвище</td>
+                                        <td>Ім’я Користувача</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Електронна пошта</td>
+                                        <td>emailexample@gmail.com</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Номер телефону</td>
+                                        <td>+38 (067) 648 56 23</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="table-block">
+                            <h3 class="title-with-flex">Інформація про доставку <img class="edit" src="./icon/edit_square.svg" alt=""></h3>
+                            <table class="personal-table mt-20">
+                                <tbody>
+                                    <tr>
+                                        <td>Спосіб доставки</td>
+                                        <td>Нова пошта</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Місто</td>
+                                        <td>Київ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Відділення</td>
+                                        <td>№15 (вул. Тараса Шевченка, 143)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="information-block">
+                    <div class="email-subscribe">
+                        <div class="left-part">
+                            <h4>Підписуйтесь на розсилку 
+                                та дізнавайтесь про новини і акції першими!</h4>
+                        </div>
+                        <div class="right-part">
+                            <a href="#" class="green-btn">Підписатись на e-mail розсилку</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="cabinen-settings">
+                <div class="account-settins mt-40">
+                    <span><img src="./icon/pin.svg" alt=""> Змінити пароль</span>
+                    <span><img src="./icon/exit.svg" alt=""> Вийти з акаунта</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+<!-- //footer -->
+<footer>
+    <div class="content footer-content">
+        <div class="top-part-footer grid-footer-top">
+
+            <div class="footer-col-top">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <span class="text-after-logo">Приєднуйтесь до нас 
+                    в соцмережах</span>
+                <div class="useful-links">
+                    <a href="#"><img src="./icon/f1.svg" alt=""></a>
+                    <a href="#"><img src="./icon/f2.svg" alt=""></a>
+                </div>
+            </div>
+
+
+            <div class="footer-col-top">
+                <span class="menu-title">Каталог</span>
+                <ul class="">
+                    <li><a href="#">Для птиці</a></li>
+                    <li><a href="#">Для свиней</a></li>
+                    <li><a href="#">Для ВРХ</a></li>
+                    <li><a href="#">Обладнання</a></li>
+                    <li><a href="#">Біобезпека</a></li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="footer-col-top">
+                <span class="menu-title">Про магазин</span>
+                <ul class="">
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Бренди</a></li>
+                    <li><a href="#">Новини</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-top">
+                <span class="menu-title">Інформація</span>
+                <ul class="">
+                    <li><a href="#">Обмін і повернення</a></li>
+                    <li><a href="#">Доставка та оплата</a></li>
+                    <li><a href="#">Програма лояльності</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-top">
+                <span class="menu-title">Зв’язатися з нами</span>
+
+                <div class="footer-contact-us">
+                    <span class="adress">
+                        81130, Україна, Львівська обл., 
+                        с.Сокільники, вул.Львівська бічна, 3
+                    </span>
+                    <span class="email">
+                        info@vetagro.com.ua
+                    </span>
+                    <span class="tel">
+                        +38 (067) 673 16 67
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="bottom-part-footer">
+            <div class="bottom-left-part-footer">
+                <span>
+                    <a href="#">Політика конфіденційності</a>
+                </span>
+                <span>
+                    <a href="#">Договір публічної оферти</a>
+                </span>
+            </div>
+            <div class="bottom-right-part-footer">
+                <img src="./images/by_sofenty.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+</body>
+</html>
+

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/input.css">
+    <link rel="stylesheet" href="./assets/form.css">
+    <link rel="stylesheet" href="./assets/checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+<nav class="desktop">
+    <div class="content">
+        <div class="top-menu-block">
+            <ul class="top-menu">
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Новини</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Бренди</a></li>
+                <li><a href="#">Доставка та оплата</a></li>
+                <li><a href="#">Обмін і повернення</a></li>
+            </ul>
+
+            <div class="support-block">
+                <div class="contact-phone">
+                    <a href="tel:+38 (067) 673 16 67">+38 (067) 673 16 67</a>
+                </div>
+                <div class="language-select">
+                    <span>Мова</span>
+                    <span class="flag"><img src="./icon/Ukraine (UA).svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<header>
+    <div class="content header-content">
+        <div class="header-block desktop">
+
+            <img src="./images/logo.png" alt="">
+
+
+            <div class="main-menu-block">
+                <ul class="main-menu">
+                    <li><a href="#">Для птиці</a></li>
+                    <li><a href="#">Для свиней</a></li>
+                    <li><a href="#">Для ВРХ</a></li>
+                    <li><a href="#">Обладнання</a></li>
+                    <li><a href="#">Біобезпека</a></li>
+                </ul>
+            </div>
+
+            <div class="header-shop-panel">
+                <div class="header-shop-block">
+                    <div class="header-search desktop">
+                        <input class="header-search-input" type="text" placeholder="Пошук">
+                    </div>
+                    <div class="header-shop-buttons">
+                        <span><img src="./icon/favorite.svg" alt=""></span>
+                        <span><img src="./icon/person.svg" alt=""></span>
+                        <span>
+                            <img class="showCart" src="./icon/shopping_cart.svg" alt="">
+                        </span>
+                        <span class="close-btn mobile">
+                            <img class="showClose" src="./icon/x.svg" alt="">
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="header-block mobile">
+
+            <div class="main-menu-block ">
+                <nav class="main-nav hamburger-menu">
+
+                      <input id="menu__toggle" type="checkbox" />
+                      <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                      </label>
+                    
+
+                        <div class="menu__box">
+
+                            <div class="header-block mobile  menu-mobile">
+
+                                <div class="header-shop-block">
+                                    <div class="header-shop-buttons">
+                                        <span><img src="./icon/person.svg" alt=""><span class="person-title">Увійти до кабінету</span></span>
+                                        <span><img src="./icon/favorite.svg" alt=""></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <div class="header-search mobile">
+                                <input class="header-search-input" type="text" placeholder="Пошук">
+                            </div>
+                            <div class="mobile-menus-place">
+                                <div class="place-for-mobile-menu">
+                                    <div class="content">
+                                        <h3>Каталог товарів</h3>
+                                        <ul class="main-menu">
+                                            <li><a href="#">Для птиці</a></li>
+                                            <li><a href="#">Для свиней</a></li>
+                                            <li><a href="#">Для ВРХ</a></li>
+                                            <li><a href="#">Обладнання</a></li>
+                                            <li><a href="#">Біобезпека</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="place-for-mobile-menu">
+                                    <div class="content">
+                                        <h3>Інформація</h3>
+                                        <ul class="support-menu">
+                                            <li><a href="#">Про нас</a></li>
+                                            <li><a href="#">Новини</a></li>
+                                            <li><a href="#">Контакти</a></li>
+                                            <li><a href="#">Бренди</a></li>
+                                            <li><a href="#">Доставка та оплата</a></li>
+                                            <li><a href="#">Обмін і повернення</a></li>
+                                        </ul>
+                                        <div class="language-select">
+                                            <span>Мова</span>
+                                            <span class="flag"><img src="./icon/Ukraine (UA).svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                </nav>
+            </div>
+
+
+            <img src="./images/logo.png" alt="">
+
+            <div class="header-shop-panel">
+                <div class="header-shop-block">
+                    <div class="header-shop-buttons">
+                        <span>
+                            <img class="showCart" src="./icon/shopping_cart.svg" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</header>
+<script>
+    document.querySelector('.close-btn').addEventListener('click', function() {
+        this.classList.toggle('active');
+    });
+</script>
+
+
+
+
+
+
+
+<div class="pop-up-block">
+        
+        <h3 class="text-center">Реєстрація</h3>
+
+        <div class="fw-700 text-center mt-20 mb-20">Вже зареєстровані? <a href="#" class="green">Увійти до кабінету</a></div>
+
+        <div class="" id="form-new-checkout">
+            <div class="place-form-pop-up">
+                <form class="form-main" action="">
+
+                    <div class="form-field-block">
+                        <label for="surname">Прізвище</label>
+                        <input type="text" name="surname" id="surname" required="">
+                    </div>
+
+                    <div class="form-field-block">
+                        <label for="name">Ім’я</label>
+                        <input type="text" name="name" id="name" required="">
+                    </div>
+
+                    <div class="form-field-block">
+                        <label for="phone">Номер телефону</label>
+                        <input type="text" name="phone" id="phone" placeholder="+38 (0--) --- -- --" required="">
+                    </div>
+
+                    <div class="form-field-block">
+                        <label for="email">Адреса електронної пошти</label>
+                        <input type="text" name="email" id="email" required="">
+                    </div>
+
+                    <div class="form-field-block">
+                        <label for="password">Придумайте пароль (не менше 8 символів)</label>
+                        <div class="show-password">
+                            <input type="password" name="password" id="password" required="">
+                            <span class="toggle-password"></span>
+                        </div>
+                    </div>
+
+                    <button class="green-btn fill-green text-center m-auto w-100" href="#checkout">Зареєструватися</button>
+
+                </form>
+            </div>
+        </div>
+
+
+        <div class="login-with-service-block mt-40">
+            <div class="line-with-support-text">
+                <span class="support-text">AБО</span>
+            </div>
+
+            <div class="service-to-login">
+                <a href="#" class="gray-btn text-center mw-280 service-btn w-100"><img src="./icon/google.svg" alt=""> Увійти через Google</a>
+                <a href="#" class="gray-btn text-center mw-280 service-btn w-100"><img src="./icon/facebook.svg" alt="">Увійти через Facebook</a>
+            </div>
+        </div>
+
+
+</div>
+
+
+
+
+<div class="pop-up-block">
+        
+    <h3 class="text-center">Вхід</h3>
+
+    <div class="fw-700 text-center mt-20 mb-20">Ще не зареєстровані? <a href="#" class="green">Зареєструватись</a></div>
+
+    <div class="" id="form-new-checkout">
+        <div class="place-form-pop-up">
+            <form class="form-main" action="">
+
+                <div class="form-field-block">
+                    <label for="email">Адреса електронної пошти</label>
+                    <input type="text" name="email" id="email" required="">
+                </div>
+
+                <div class="form-field-block">
+                    <label for="password">Пароль</label>
+                    <div class="show-password">
+                        <input type="password" name="password" id="password" required="">
+                        <span class="toggle-password"></span>
+                    </div>
+                    <a href="#" class="forgot-password green fw-700">Забув пароль</a>
+                </div>
+
+
+                <button class="green-btn fill-green text-center m-auto w-100" href="#checkout">Увійти</button>
+
+            </form>
+        </div>
+    </div>
+
+
+    <div class="login-with-service-block mt-40">
+        <div class="line-with-support-text">
+            <span class="support-text">AБО</span>
+        </div>
+
+        <div class="service-to-login">
+            <a href="#" class="gray-btn text-center mw-280 service-btn w-100"><img src="./icon/google.svg" alt=""> Увійти через Google</a>
+            <a href="#" class="gray-btn text-center mw-280 service-btn w-100"><img src="./icon/facebook.svg" alt="">Увійти через Facebook</a>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+<div class="pop-up-block">
+        
+    <h3 class="text-center">Вхід</h3>
+
+    <div class="fw-700 text-center mt-20 mb-20">Ще не зареєстровані? <a href="#" class="green">Зареєструватись</a></div>
+
+    <div class="" id="form-new-checkout">
+        <div class="place-form-pop-up">
+            <form class="form-main" action="">
+
+                <div class="form-field-block">
+                    <label for="password">Пароль</label>
+                    <div class="show-password">
+                        <input type="password" name="password" id="password" required="">
+                        <span class="toggle-password"></span>
+                    </div>
+                    <a href="#" class="forgot-password green fw-700">Забув пароль</a>
+                </div>
+
+                <div class="form-field-block">
+                    <label for="password">Повторіть новий пароль</label>
+                    <div class="show-password">
+                        <input type="password" name="password" id="password" required="">
+                        <span class="toggle-password"></span>
+                    </div>
+                    <a href="#" class="forgot-password green fw-700">Забув пароль</a>
+                </div>
+
+
+                <button class="green-btn fill-green text-center m-auto w-100" href="#checkout">Зберегти новий пароль</button>
+
+            </form>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+
+
+
+
+<!-- //footer -->
+<footer>
+    <div class="content footer-content">
+        <div class="top-part-footer grid-footer-top">
+
+            <div class="footer-col-top">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <span class="text-after-logo">Приєднуйтесь до нас 
+                    в соцмережах</span>
+                <div class="useful-links">
+                    <a href="#"><img src="./icon/f1.svg" alt=""></a>
+                    <a href="#"><img src="./icon/f2.svg" alt=""></a>
+                </div>
+            </div>
+
+
+            <div class="footer-col-top">
+                <span class="menu-title">Каталог</span>
+                <ul class="">
+                    <li><a href="#">Для птиці</a></li>
+                    <li><a href="#">Для свиней</a></li>
+                    <li><a href="#">Для ВРХ</a></li>
+                    <li><a href="#">Обладнання</a></li>
+                    <li><a href="#">Біобезпека</a></li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="footer-col-top">
+                <span class="menu-title">Про магазин</span>
+                <ul class="">
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Бренди</a></li>
+                    <li><a href="#">Новини</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-top">
+                <span class="menu-title">Інформація</span>
+                <ul class="">
+                    <li><a href="#">Обмін і повернення</a></li>
+                    <li><a href="#">Доставка та оплата</a></li>
+                    <li><a href="#">Програма лояльності</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-top">
+                <span class="menu-title">Зв’язатися з нами</span>
+
+                <div class="footer-contact-us">
+                    <span class="adress">
+                        81130, Україна, Львівська обл., 
+                        с.Сокільники, вул.Львівська бічна, 3
+                    </span>
+                    <span class="email">
+                        info@vetagro.com.ua
+                    </span>
+                    <span class="tel">
+                        +38 (067) 673 16 67
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="bottom-part-footer">
+            <div class="bottom-left-part-footer">
+                <span>
+                    <a href="#">Політика конфіденційності</a>
+                </span>
+                <span>
+                    <a href="#">Договір публічної оферти</a>
+                </span>
+            </div>
+            <div class="bottom-right-part-footer">
+                <img src="./images/by_sofenty.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+</body>
+</html>
+
+<script>
+
+document.querySelectorAll('.toggle-password').forEach(function(toggle) {
+    toggle.addEventListener('click', function() {
+        // Ищем поле input внутри родительского элемента .show-password
+        var passwordInput = this.closest('.show-password').querySelector('input');
+
+        // Меняем тип input между 'password' и 'text'
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+        } else {
+            passwordInput.type = 'password';
+        }
+    });
+});
+
+</script>

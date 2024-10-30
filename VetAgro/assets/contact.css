@@ -1,0 +1,183 @@
+.contact-info-block{
+    padding: 0;
+}
+
+
+.contact-info{
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: 1fr 2fr 1fr; 
+    gap: 60px;
+}
+
+
+
+
+.contact-yellow-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FBF5E1;
+}
+
+.map-marker-before{
+    display: flex;
+    align-items: center;
+}
+.map-marker-before:before{
+    content: url('../icon/map-marker.svg');
+}
+
+.contact-info > div{
+    padding: 30px 0;
+}
+
+.contact-commune{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.contact-commune > *{
+    position: relative;
+}
+.tel-green:before{
+    content: url('../icon/tel-green.svg');
+    position: absolute;
+    left: -34px;
+}
+
+.email-green:before{
+    content: url('../icon/mail-green.svg');
+    position: absolute;
+    left: -34px;
+}
+
+
+@media screen and (max-width: 1000px){
+    .contact-info{
+        grid-template-columns: 1fr; 
+        gap: 20px;
+    }
+    .contact-info > div{
+        padding: 0;
+    }
+    .contact-address{
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+.mananger-region{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.mananger-name{
+
+}
+.mananger-phone{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.mananger-phone::before{
+    content: url('../icon/tel-green.svg');
+}
+
+
+.contact-map{
+    width: 90%;
+    margin: auto;
+}
+.contact-map {
+    display: grid; 
+    grid-auto-columns: 1fr; 
+    grid-auto-rows: 1fr; 
+    grid-template-columns: auto  2fr auto ; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 40px; 
+    grid-template-areas: 
+      "mananger1 ukraine-map mananger2"
+      "mananger3 ukraine-map mananger4"; 
+  }
+.mananger1 { grid-area: mananger1; }
+.mananger2 { grid-area: mananger2; }
+.mananger3 { grid-area: mananger3; }
+.mananger4 { grid-area: mananger4; }
+.ukraine-map { grid-area: ukraine-map; }
+
+@media screen and (max-width: 1000px){
+    .contact-map {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mananger-contacts{
+        align-items: center;
+    }
+}
+
+
+
+
+.mananger-contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mananger3, .mananger4 { justify-content: flex-end}
+
+.ukraine-map{
+    max-width: 100%;
+    display: flex;
+    margin: auto;
+}
+.ukraine-map img{ 
+    max-width: 100%;
+}
+
+
+/* our apteki */
+.titles-block{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.our-pharmacy-block{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.our-pharmacy-block .mananger-contacts{
+    align-items: center;
+}
+.pharmacy-img{
+    width: 48px;
+    height: 48px;
+    margin: auto;
+}
+
+@media screen and (max-width: 1000px){
+    .our-pharmacy-block{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.section_block.contact-form-section{
+    border-top: 1px solid #D6D6D6;
+}
+
+
+
+.contact-form-block form{
+    max-width: 740px;
+    margin: auto;
+}

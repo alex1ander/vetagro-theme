@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/input.css">
+    <link rel="stylesheet" href="./assets/form.css">
+    <link rel="stylesheet" href="./assets/table.css">
+    <link rel="stylesheet" href="./assets/checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+<nav class="desktop">
+    <div class="content">
+        <div class="top-menu-block">
+            <ul class="top-menu">
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Новини</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Бренди</a></li>
+                <li><a href="#">Доставка та оплата</a></li>
+                <li><a href="#">Обмін і повернення</a></li>
+            </ul>
+
+            <div class="support-block">
+                <div class="contact-phone">
+                    <a href="tel:+38 (067) 673 16 67">+38 (067) 673 16 67</a>
+                </div>
+                <div class="language-select">
+                    <span>Мова</span>
+                    <span class="flag"><img src="./icon/Ukraine (UA).svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<header>
+    <div class="content header-content">
+        <div class="header-block desktop">
+
+            <img src="./images/logo.png" alt="">
+
+
+            <div class="main-menu-block">
+                <ul class="main-menu">
+                    <li><a href="#">Для птиці</a></li>
+                    <li><a href="#">Для свиней</a></li>
+                    <li><a href="#">Для ВРХ</a></li>
+                    <li><a href="#">Обладнання</a></li>
+                    <li><a href="#">Біобезпека</a></li>
+                </ul>
+            </div>
+
+            <div class="header-shop-panel">
+                <div class="header-shop-block">
+                    <div class="header-search desktop">
+                        <input class="header-search-input" type="text" placeholder="Пошук">
+                    </div>
+                    <div class="header-shop-buttons">
+                        <span><img src="./icon/favorite.svg" alt=""></span>
+                        <span><img src="./icon/person.svg" alt=""></span>
+                        <span>
+                            <img class="showCart" src="./icon/shopping_cart.svg" alt="">
+                        </span>
+                        <span class="close-btn mobile">
+                            <img class="showClose" src="./icon/x.svg" alt="">
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="header-block mobile">
+
+            <div class="main-menu-block ">
+                <nav class="main-nav hamburger-menu">
+
+                      <input id="menu__toggle" type="checkbox" />
+                      <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                      </label>
+                    
+
+                        <div class="menu__box">
+
+                            <div class="header-block mobile  menu-mobile">
+
+                                <div class="header-shop-block">
+                                    <div class="header-shop-buttons">
+                                        <span><img src="./icon/person.svg" alt=""><span class="person-title">Увійти до кабінету</span></span>
+                                        <span><img src="./icon/favorite.svg" alt=""></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <div class="header-search mobile">
+                                <input class="header-search-input" type="text" placeholder="Пошук">
+                            </div>
+                            <div class="mobile-menus-place">
+                                <div class="place-for-mobile-menu">
+                                    <div class="content">
+                                        <h3>Каталог товарів</h3>
+                                        <ul class="main-menu">
+                                            <li><a href="#">Для птиці</a></li>
+                                            <li><a href="#">Для свиней</a></li>
+                                            <li><a href="#">Для ВРХ</a></li>
+                                            <li><a href="#">Обладнання</a></li>
+                                            <li><a href="#">Біобезпека</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="place-for-mobile-menu">
+                                    <div class="content">
+                                        <h3>Інформація</h3>
+                                        <ul class="support-menu">
+                                            <li><a href="#">Про нас</a></li>
+                                            <li><a href="#">Новини</a></li>
+                                            <li><a href="#">Контакти</a></li>
+                                            <li><a href="#">Бренди</a></li>
+                                            <li><a href="#">Доставка та оплата</a></li>
+                                            <li><a href="#">Обмін і повернення</a></li>
+                                        </ul>
+                                        <div class="language-select">
+                                            <span>Мова</span>
+                                            <span class="flag"><img src="./icon/Ukraine (UA).svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                </nav>
+            </div>
+
+
+            <img src="./images/logo.png" alt="">
+
+            <div class="header-shop-panel">
+                <div class="header-shop-block">
+                    <div class="header-shop-buttons">
+                        <span>
+                            <img class="showCart" src="./icon/shopping_cart.svg" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</header>
+<script>
+    document.querySelector('.close-btn').addEventListener('click', function() {
+        this.classList.toggle('active');
+    });
+</script>
+
+
+
+<section id="checkout-section" class="section_block">
+    <div class="content">
+        <h1>Оформлення замовлення</h1>
+        <div class="checkout-grid">
+            <div class="checkout-form-block">
+                
+               
+                <div class="information-block">
+                    <div class="yellow-figure-rounded"></div>
+                    <h3>Контактні дані</h3>
+
+
+                    <div class="form-checkout-tabs mt-30">
+                        <input type="radio" name="select-form" id="new-checkout" class="checkout-radio"checked="checked"/>
+                        <input type="radio" name="select-form" id="login-checkout" class="checkout-radio" />
+                        <div class="select-form-checkout mb-40">
+                            <label for="new-checkout" id="label-new-checkout" class="select-form"><h5>Новий покупець</h5></label>
+                            <label for="login-checkout" id="label-login-checkout" class="select-form"><h5>Увійти в кабінет<h5></label>
+                        </div>
+                        
+
+
+                        <div class="select-form-block-d-none" id="form-new-checkout">
+                            <div class="place-form-main">
+                                <form class="form-main two-col"  action="">
+
+                                    <div class="place-for-input">
+                                        <div class="form-field-block">
+                                            <label for="surname">Прізвище</label>
+                                            <input type="text" name="surname" id="surname" required />
+                                        </div>
+
+                                        <div class="form-field-block">
+                                            <label for="name">Ім’я</label>
+                                            <input type="text" name="name" id="name" required />
+                                        </div>
+                                    </div>
+                                    <div class="place-for-input">
+                                        <div class="form-field-block">
+                                            <label for="phone">Номер телефону</label>
+                                            <input type="text" name="phone" id="phone" placeholder="+38 (0--) --- -- --" required />
+                                        </div>
+
+                                        <div class="form-field-block">
+                                            <label for="email">Адреса електронної пошти</label>
+                                            <input type="text" name="email" id="email" required />
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="select-form-block-d-none" id="form-login-checkout">
+                            <div class="place-form-main">
+                                <form class="form-main two-col"  action="">
+                                    <div class="place-for-input">
+                                        <div class="form-field-block">
+                                            <label for="email">Адреса електронної пошти</label>
+                                            <input type="text" name="email" id="email" required />
+                                        </div>
+
+                                        <div class="form-field-block">
+                                            <label for="password">Пароль</label>
+                                            <input type="password" name="password" id="password" required />
+                                        </div>
+                                    </div>
+                                
+                                <button class="green-btn fill-green text-center m-auto" href="#checkout">Оформити замовлення</button>
+
+                                </form>
+                            </div>
+                        </div>
+
+                        <div class="login-with-service-block mt-40">
+                            <div class="line-with-support-text">
+                                <span class="support-text">AБО</span>
+                            </div>
+
+                            <div class="service-to-login">
+                                <a href="#" class="gray-btn text-center service-btn w-100" ><img src="./icon/google.svg" alt=""> Увійти через Google</a>
+                                <a href="#" class="gray-btn text-center service-btn w-100" ><img src="./icon/facebook.svg" alt="">Увійти через Facebook</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- end information block -->
+                <div class="information-block for-table">
+                    <table class="yellow-table">
+                        <thead>
+                            <tr>
+                                <th>Товари</th>
+                                <th>Ціна</th>
+                                <th>Кількість</th>
+                                <th>Сума</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            
+                            <tr class="product-table-grid">
+                                <td  class="product-name">
+                                    <div class="product-card">
+                                        <div class="product-block-box">
+                                            <img class="product-main-image" src="./images/product-card.png" alt="">
+                                        </div>
+                                        <span class="product-title">Метрікюр® (коробка 10 шт), шт</span>
+                                    </div>
+                                </td>
+                                <td class="product-current-price">
+                                    <span>4 900.90 грн.</span>
+                                </td>
+                                <td class="product-count">
+                                    <span class="current-count">1 од</span>
+                                </td>
+                                <td class="product-all-price fw-700">
+                                        <span>4 900.90 грн.</span>
+                                </td>
+                            </tr>
+
+                            <tr class="product-table-grid">
+                                <td  class="product-name">
+                                    <div class="product-card">
+                                        <div class="product-block-box">
+                                            <img class="product-main-image" src="./images/product-card.png" alt="">
+                                        </div>
+                                        <span class="product-title">Метрікюр® (коробка 10 шт), шт</span>
+                                    </div>
+                                </td>
+                                <td class="product-current-price">
+                                    <span>4 900.90 грн.</span>
+                                </td>
+                                <td class="product-count">
+                                    <span class="current-count">1 од</span>
+                                </td>
+                                <td class="product-all-price fw-700">
+                                        <span>4 900.90 грн.</span>
+                                </td>
+                            
+                            </tr>
+
+                            <tr class="product-table-grid">
+                                <td  class="product-name">
+                                    <div class="product-card">
+                                        <div class="product-block-box">
+                                            <img class="product-main-image" src="./images/product-card.png" alt="">
+                                        </div>
+                                        <span class="product-title">Метрікюр® (коробка 10 шт), шт</span>
+                                    </div>
+                                </td>
+                                <td class="product-current-price">
+                                    <span>4 900.90 грн.</span>
+                                </td>
+                                <td class="product-count">
+                                    <span class="current-count">1 од</span>
+                                </td>
+                                <td class="product-all-price fw-700">
+                                        <span>4 900.90 грн.</span>
+                                </td>
+                            
+                            </tr>
+
+
+                            <tr class="product-table-sum">
+                                <td class="checkout-sum" colspan="4">Разом: <span class="fw-800">14 900.90 грн.</span></td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+
+                <div class="information-block">
+                    <div class="yellow-figure-rounded"></div>
+                    <h3>Спосіб доставки</h3>
+
+                    <div class="delivery mt-30">
+                        <div class="form-checkout-radio">
+
+
+                            <div class="place-for-radio">
+                                
+                                <label class="radio-button-container" disabled>Самовивіз (Львівська обл., с. Сокільники,  вул. Львівська бічна, 3)
+                                    <input id="delivery1" type="radio" name="delivery">
+                                    <span class="checkmark-radio"></span>
+                                </label>
+
+                                <span class="sub-title price-delivery-d-none">Безкоштовно</span>
+                            </div>
+
+                            <div class="place-for-radio">
+                                <label class="radio-button-container" disabled>У відділення Нової Пошти
+                                    <input id="delivery2" type="radio" name="delivery" checked>
+                                    <span class="checkmark-radio"></span>
+                                </label>
+
+                                <span class="sub-title price-delivery-d-none">За тарифами перевізника</span>
+                            </div>
+
+                            <div class="form-for-delivery2 form-for-radio">
+
+                                <form class="form-main two-col"  action="">
+
+                                    <div class="place-for-input">
+                                        <div class="form-field-block">
+                                            <label for="surname">Місто</label>
+                                            <div class="select-green">
+                                                <select>
+                                                    <option>Open this select menu1</option>
+                                                    <option>Open this select menu2</option>
+                                                    <option>Open this select menu3</option>
+                                                    <option>Open this select menu4</option>
+                                                    <option>Open this select menu5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-field-block">
+                                            <label for="name">Відділення</label>
+                                            <div class="select-green">
+                                                <select>
+                                                    <option>Open this select menu1</option>
+                                                    <option>Open this select menu2</option>
+                                                    <option>Open this select menu3</option>
+                                                    <option>Open this select menu4</option>
+                                                    <option>Open this select menu5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="w-100">
+                                        <label class="check-box">Отримувати буде інша людина
+                                            <input type="checkbox">
+                                            <span class="checkmark-checkbox"></span>
+                                        </label>
+                                    </div>
+                                    <div class="place-for-input">
+                                        <div class="form-field-block">
+                                            <label for="surname-np">Прізвище</label>
+                                            <input type="text" name="surname-np" id="surname-np" required />
+                                        </div>
+
+                                        <div class="form-field-block">
+                                            <label for="name-np">Ім’я</label>
+                                            <input type="text" name="name-np" id="name-np" required />
+                                        </div>
+                                    </div>
+
+                                    <div class="form-field-block">
+                                        <label for="phone-np">Номер телефону</label>
+                                        <input type="text" name="phone-np" id="phone-np" placeholder="+38 (0--) --- -- --" required="">
+                                    </div>
+
+                                </form>
+
+                            </div>
+
+                            <div class="place-for-radio">
+                                <label class="radio-button-container" disabled>Кур’єром Нової Пошти
+                                    <input id="delivery3" type="radio" name="delivery" che>
+                                    <span class="checkmark-radio"></span>
+                                </label>
+                                <span class="sub-title price-delivery-d-none">За тарифами перевізника</span>
+                            </div>
+
+                            <div class="form-for-delivery3 form-for-radio">
+
+                                <form class="form-main two-col"  action="">
+                                    
+                                    <div class="place-for-input">
+                                        <div class="form-field-block">
+                                            <label for="surname">Область</label>
+                                            <div class="select-green">
+                                                <select>
+                                                    <option>Open this select menu1</option>
+                                                    <option>Open this select menu2</option>
+                                                    <option>Open this select menu3</option>
+                                                    <option>Open this select menu4</option>
+                                                    <option>Open this select menu5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-field-block">
+                                            <label for="name">Місто</label>
+                                            <div class="select-green">
+                                                <select>
+                                                    <option>Open this select menu1</option>
+                                                    <option>Open this select menu2</option>
+                                                    <option>Open this select menu3</option>
+                                                    <option>Open this select menu4</option>
+                                                    <option>Open this select menu5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-field-block">
+                                            <label for="name">Вулиця</label>
+                                            <div class="select-green">
+                                                <select>
+                                                    <option>Open this select menu1</option>
+                                                    <option>Open this select menu2</option>
+                                                    <option>Open this select menu3</option>
+                                                    <option>Open this select menu4</option>
+                                                    <option>Open this select menu5</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>  
+
+                                    <div class="place-for-input">
+
+                                            <div class="form-field-block">
+                                                <label for="house-np">Будинок</label>
+                                                <input type="text" name="house-np" id="house-np" required />
+                                            </div>
+                                            
+                                            <div class="form-field-block">
+                                                <label for="place-np">Квартира</label>
+                                                <input type="text" name="place-np" id="place-np" required />
+                                            </div>
+
+                                    </div>
+                                    <div class="place-for-input">
+                                            <label class="check-box">Отримувати буде інша людина
+                                                <input type="checkbox">
+                                                <span class="checkmark-checkbox"></span>
+                                            </label>
+                                    </div>
+                                    <div class="place-for-input">
+                                        <div class="form-field-block">
+                                            <label for="surname-np">Прізвище</label>
+                                            <input type="text" name="surname-np" id="surname-np" required />
+                                        </div>
+
+                                        <div class="form-field-block">
+                                            <label for="name-np">Ім’я</label>
+                                            <input type="text" name="name-np" id="name-np" required />
+                                        </div>
+
+                                    </div>
+
+                                    <div class="form-field-block w50p-10">
+                                        <label for="phone-np">Номер телефону</label>
+                                        <input type="text" name="phone-np" id="phone-np" placeholder="+38 (0--) --- -- --" required="">
+                                    </div>
+
+                                </form>
+
+                            </div>
+                            
+                        </div>
+                    </div>
+    
+                </div>
+
+                <div class="information-block">
+                    <div class="yellow-figure-rounded"></div>
+                    <h3>Спосіб оплати</h3>
+
+                    <div class="delivery mt-30">
+                        <form class="form-checkout-radio"  action="">
+
+
+                            <div class="place-for-radio">
+                                <label class="radio-button-container" disabled>Картою Visa чи Mastercard (LiqPay)
+                                    <input id="delivery1" type="radio" name="delivery">
+                                    <span class="checkmark-radio"></span>
+                                </label>
+                            </div>
+
+                            <div class="place-for-radio">
+                                <label class="radio-button-container" disabled>Готівкою при отриманні
+                                    <input id="delivery1" type="radio" name="delivery">
+                                    <span class="checkmark-radio"></span>
+                                </label>
+                            </div>
+
+                            <div class="place-for-radio">
+                                <label class="radio-button-container" disabled>IBAN платіж на рахунок ПП ВетАгро
+                                    <input id="delivery1" type="radio" name="delivery">
+                                    <span class="checkmark-radio"></span>
+                                </label>
+                            </div>
+                            
+                        </form>
+                    </div>
+    
+                </div>
+
+                <div class="add-comment-to-order">
+                    <span class="add-comment-btn">Додати коментар до замовлення</span>
+                </div>
+
+
+            </div>
+
+
+            <div class="checkout-sidebar">
+                <div class="information-block coupon-block">
+                    <span class="use-coupon-btn">Застосувати купон</span>
+                </div>
+
+                <div class="information-block">
+                    <div class="order-confrim">
+
+                        <div class="short-info">
+
+                            <div class="row">
+                                <span class="service-name">2 товари на суму</span>
+                                <span class="service-value fw-700">9 125.80 грн</span>
+                            </div>
+
+                            <div class="row">
+                                <span class="service-name">Сума знижки</span>
+                                <span class="service-value fw-700">-200.00 грн</span>
+                            </div>
+
+                            <div class="row">
+                                <span class="service-name">Доставка</span>
+                                <span class="service-value fw-700">за тарифами перевізника</span>
+                            </div>
+
+                        </div>
+
+                        <div class="to-pay-info mt-30">
+                            <div class="row">
+                                <span class="pay-info  fw-700">До сплати</span>
+                                <span class="pay-info  fw-700">8 925.80 грн</span>
+                            </div>
+                        </div>
+
+                        <button class="green-btn fill-green w-100 mt-30 text-center m-auto" href="#checkout">Замовлення підтверджую</button>
+
+                        <div class="confirm-order mt-30">
+                            <label class="check-box">Оформлюючи замовлення, я даю згоду на обробку моїх персональних даних
+                                <input type="checkbox">
+                                <span class="checkmark-checkbox"></span>
+                            </label>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- //footer -->
+<footer>
+    <div class="content footer-content">
+        <div class="top-part-footer grid-footer-top">
+
+            <div class="footer-col-top">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <span class="text-after-logo">Приєднуйтесь до нас 
+                    в соцмережах</span>
+                <div class="useful-links">
+                    <a href="#"><img src="./icon/f1.svg" alt=""></a>
+                    <a href="#"><img src="./icon/f2.svg" alt=""></a>
+                </div>
+            </div>
+
+
+            <div class="footer-col-top">
+                <span class="menu-title">Каталог</span>
+                <ul class="">
+                    <li><a href="#">Для птиці</a></li>
+                    <li><a href="#">Для свиней</a></li>
+                    <li><a href="#">Для ВРХ</a></li>
+                    <li><a href="#">Обладнання</a></li>
+                    <li><a href="#">Біобезпека</a></li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="footer-col-top">
+                <span class="menu-title">Про магазин</span>
+                <ul class="">
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Бренди</a></li>
+                    <li><a href="#">Новини</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-top">
+                <span class="menu-title">Інформація</span>
+                <ul class="">
+                    <li><a href="#">Обмін і повернення</a></li>
+                    <li><a href="#">Доставка та оплата</a></li>
+                    <li><a href="#">Програма лояльності</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-top">
+                <span class="menu-title">Зв’язатися з нами</span>
+
+                <div class="footer-contact-us">
+                    <span class="adress">
+                        81130, Україна, Львівська обл., 
+                        с.Сокільники, вул.Львівська бічна, 3
+                    </span>
+                    <span class="email">
+                        info@vetagro.com.ua
+                    </span>
+                    <span class="tel">
+                        +38 (067) 673 16 67
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="bottom-part-footer">
+            <div class="bottom-left-part-footer">
+                <span>
+                    <a href="#">Політика конфіденційності</a>
+                </span>
+                <span>
+                    <a href="#">Договір публічної оферти</a>
+                </span>
+            </div>
+            <div class="bottom-right-part-footer">
+                <img src="./images/by_sofenty.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+</body>
+</html>
+
+
+<script>
+    var swiper = new Swiper(".products-swiper", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        freeMode: false,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+      },
+      navigation: {
+            enabled: false,
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+      },
+      breakpoints: {
+        500: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+            navigation: {
+                enabled: false,
+            },
+            pagination: {
+                enabled: true,
+            },
+        },
+        900: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+            navigation: {
+                enabled: true,
+            },
+            pagination: {
+                enabled: false,
+            },
+        },
+        1200: {
+            slidesPerView: 4,
+            spaceBetween: 20,
+            navigation: {
+                enabled: true,
+            },
+            pagination: {
+                enabled: false,
+            },
+        },
+      },
+    });
+  </script>

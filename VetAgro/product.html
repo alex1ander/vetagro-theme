@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+<nav class="desktop">
+    <div class="content">
+        <div class="top-menu-block">
+            <ul class="top-menu">
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Новини</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Бренди</a></li>
+                <li><a href="#">Доставка та оплата</a></li>
+                <li><a href="#">Обмін і повернення</a></li>
+            </ul>
+
+            <div class="support-block">
+                <div class="contact-phone">
+                    <a href="tel:+38 (067) 673 16 67">+38 (067) 673 16 67</a>
+                </div>
+                <div class="language-select">
+                    <span>Мова</span>
+                    <span class="flag"><img src="./icon/Ukraine (UA).svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<header>
+    <div class="content header-content">
+        <div class="header-block desktop">
+
+            <img src="./images/logo.png" alt="">
+
+
+            <div class="main-menu-block">
+                <ul class="main-menu">
+                    <li><a href="#">Для птиці</a></li>
+                    <li><a href="#">Для свиней</a></li>
+                    <li><a href="#">Для ВРХ</a></li>
+                    <li><a href="#">Обладнання</a></li>
+                    <li><a href="#">Біобезпека</a></li>
+                </ul>
+            </div>
+
+            <div class="header-shop-panel">
+                <div class="header-shop-block">
+                    <div class="header-search desktop">
+                        <input class="header-search-input" type="text" placeholder="Пошук">
+                    </div>
+                    <div class="header-shop-buttons">
+                        <span><img src="./icon/favorite.svg" alt=""></span>
+                        <span><img src="./icon/person.svg" alt=""></span>
+                        <span>
+                            <img class="showCart" src="./icon/shopping_cart.svg" alt="">
+                        </span>
+                        <span class="close-btn mobile">
+                            <img class="showClose" src="./icon/x.svg" alt="">
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="header-block mobile">
+
+            <div class="main-menu-block ">
+                <nav class="main-nav hamburger-menu">
+
+                      <input id="menu__toggle" type="checkbox" />
+                      <label class="menu__btn" for="menu__toggle">
+                        <span class="burger-btn"></span>
+                      </label>
+                    
+
+                        <div class="menu__box">
+
+                            <div class="header-block mobile  menu-mobile">
+
+                                <div class="header-shop-block">
+                                    <div class="header-shop-buttons">
+                                        <span><img src="./icon/person.svg" alt=""><span class="person-title">Увійти до кабінету</span></span>
+                                        <span><img src="./icon/favorite.svg" alt=""></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <div class="header-search mobile">
+                                <input class="header-search-input" type="text" placeholder="Пошук">
+                            </div>
+                            <div class="mobile-menus-place">
+                                <div class="place-for-mobile-menu">
+                                    <div class="content">
+                                        <h3>Каталог товарів</h3>
+                                        <ul class="main-menu">
+                                            <li><a href="#">Для птиці</a></li>
+                                            <li><a href="#">Для свиней</a></li>
+                                            <li><a href="#">Для ВРХ</a></li>
+                                            <li><a href="#">Обладнання</a></li>
+                                            <li><a href="#">Біобезпека</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="place-for-mobile-menu">
+                                    <div class="content">
+                                        <h3>Інформація</h3>
+                                        <ul class="support-menu">
+                                            <li><a href="#">Про нас</a></li>
+                                            <li><a href="#">Новини</a></li>
+                                            <li><a href="#">Контакти</a></li>
+                                            <li><a href="#">Бренди</a></li>
+                                            <li><a href="#">Доставка та оплата</a></li>
+                                            <li><a href="#">Обмін і повернення</a></li>
+                                        </ul>
+                                        <div class="language-select">
+                                            <span>Мова</span>
+                                            <span class="flag"><img src="./icon/Ukraine (UA).svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                </nav>
+            </div>
+
+
+            <img src="./images/logo.png" alt="">
+
+            <div class="header-shop-panel">
+                <div class="header-shop-block">
+                    <div class="header-shop-buttons">
+                        <span>
+                            <img class="showCart" src="./icon/shopping_cart.svg" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</header>
+<script>
+    document.querySelector('.close-btn').addEventListener('click', function() {
+        this.classList.toggle('active');
+    });
+</script>
+
+
+
+
+
+
+
+<section class="breadcrumb_section section_block">
+    <div class="content">
+        <nav id="breadcrumbs">
+            <span>
+                <a href="#">Головна</a> › 
+                <a href="#">Каталог</a> › 
+                <span class="breadcrumb_last" aria-current="page">Для птиці</span>
+            </span>
+        </nav>
+    </div>
+</section>
+
+
+<section class="the-product section_block">
+    <div class="content">
+       <div class="product-flex">
+            <div class="product-view">
+                
+                <div class="category-preview">
+                    <img src="./icon/category-previe.svg" alt="">
+                    <img src="./icon/category-previe.svg" alt="">
+                    <img src="./icon/category-previe.svg" alt="">
+                    <div class="add-to-favorite mobile">
+                        <img src="./icon/favorite_card.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="product-image-slider">
+
+                        <div class="swiper productImgSwiper2">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <img src="./images/product.png" />
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./images/product.png" />
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./images/product.png" />
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./images/product.png" />
+                                </div>
+
+                            </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+
+                        <div thumbsSlider="" class="swiper productImgSwiper">
+                            <div class="swiper-wrapper">
+
+                                <div class="swiper-slide">
+                                    <img src="./images/product.png" />
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <img src="./images/product.png" />
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./images/product.png" />
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <img src="./images/product.png" />
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                </div>
+            </div>
+
+            <div class="product-content">
+
+                <div class="product-info-block">
+                    <div class="product-info">
+                        <div class="product-title mt-10 fw-700-block">
+                            <h1 class="product-name">Метрікюр® (коробка 10 шт), шт</h1>
+                            <div class="add-to-favorite desktop">
+                                <img src="./icon/favorite_card.svg" alt="">
+                            </div>
+                        </div>
+
+                        <div class="product-part-block">
+                            <div class="text-space-between">
+                                <div class="in-stock">
+                                    <span >В наявности</span>
+                                </div>
+
+                                <div class="product-code">
+                                    <span>Код товару: 50256</span>
+                                </div>
+                            </div>
+
+                            <div class="text-space-between">
+                                <div class="about-rating">
+                                    <div class="rating">
+                                        <img src="./icon/star.svg" alt="">
+                                        <img src="./icon/star.svg" alt="">
+                                        <img src="./icon/star.svg" alt="">
+                                        <img src="./icon/star.svg" alt="">
+                                        <img src="./icon/star.svg" alt="">
+                                    </div>
+                                    <span>23 відгуки</span>
+                                    <span class="desktop"><a href="#review-block">Залишити відгук</a></span>
+                                </div>
+
+                                <div class="product-code">
+                                    <span>Артикул: 50256</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-part-block">
+                            <span class="product-part-title">
+                                Об’єм:
+                            </span>
+                            <div class="variable-param-block">
+                                <div class="variable-param active">100мл</div>
+                                <div class="variable-param">200мл</div>
+                            </div>
+                        </div>
+
+                        <div class="product-part-block flex-column">
+                            <div class="price-block">
+                                <span class="product-part-title full-price">5 562.90 грн.</span>
+                                <span class="current-price">4 900.90 грн.</span>                      
+                            </div>
+
+                            <div class="product-counter">
+                                <div class="minus-count btn-counter"><img src="./icon/minus.svg" alt=""></div>
+                                <span class="current-count">1</span>
+                                <div class="plus-count btn-counter"><img src="./icon/plus.svg" alt=""></div>
+                            </div>
+
+                            <button class="add-to-cart"><span>Купити</span></button>                            
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="product-service-benefits">
+                    <div class="benefit-current">
+                        <img src="./icon/delivery.svg" alt="">
+                        <span>Доставка</span>
+                    </div>
+
+                    <div class="benefit-current">
+                        <img src="./icon/payment.svg" alt="">
+                        <span>Оплата</span>
+                    </div>
+
+                    <div class="benefit-current">
+                        <img src="./icon/return.svg" alt="">
+                        <span>Обмін та повернення</span>
+                    </div>
+                </div>
+
+                <div class="warning-text-block  bg-blue">
+                    <div class="warning-text-content bg-white border-radius-top">
+                        <p class="title">Товар з розділу ВАКЦИНИ поставляється тільки при 100% передоплаті і замовленням термоупакування з холодогеном для транспортування!</p>
+                        <p class="text">Гарантія від виробника на вакцини не поширюється, якщо покупець не забрав замовлення протягом 48 годин з моменту відправлення.</p>
+                    </div>
+                    <div class="warning-text-content">
+                        <p class="sub-title"><strong>Вартість термоупакування — 100 грн.</strong> При замовленні вакцин на суму більше 
+                        10 тис грн., термоупакування  БЕЗКОШТОВНО!</p>
+                    </div>
+                </div>
+
+                <div class="warning-text-block bg-yellow">
+                    <div class="warning-text-content warning-titles">
+                        <img src="./icon/discount-orange.svg" alt="">
+                        <span class="product-block-title">Вигідна пропозиція</span>
+                    </div>
+                    <div class="warning-text-content bg-white  border-radius-bottom">
+                        
+
+                        <div class="grid-group-discount-product">
+
+
+                            <div class="product-card">
+                                <div class="product-block-box">
+                                    <img class="product-main-image" src="./images/product-card.png" alt="">
+                                </div>
+                                <div class="bottom-text-box">
+                                    <div class="product-title mt-10 fw-700">Метрікюр® (коробка 10 шт), шт</div>
+                                    <div class="product-block-bottom">
+                                        <div class="product-price">
+                                            <span>4 900.90 грн.</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <img src="./icon/orange-plus.svg" alt="">
+
+                            <div class="product-card">
+                                <div class="product-block-box">
+                                    <img class="product-main-image" src="./images/product-card.png" alt="">
+                                </div>
+                                <div class="bottom-text-box">
+                                    <div class="product-title mt-10 fw-700">Метрікюр® (коробка 10 шт), шт</div>
+                                    <div class="product-block-bottom">
+                                        <div class="product-price">
+                                            <span>4 900.90 грн.</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <img src="./icon/orange-plus.svg" alt="">
+
+                            <div class="product-card">
+                                <div class="product-block-box">                                    
+                                    <img class="product-main-image" src="./images/product-card.png" alt="">
+                                </div>
+                                <div class="bottom-text-box">
+                                    <div class="product-title mt-10 fw-700">Метрікюр® (коробка 10 шт), шт</div>
+                                    <div class="product-block-bottom">
+                                        <div class="product-price">
+                                            <span>4 900.90 грн.</span>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="group-discount-product-sum">                       
+
+                            <div class="product-part-block flex-column">
+                                <img src="./icon/orange-sum.svg" alt="">
+
+                                <div class="price-block">
+                                    <span class="product-part-title full-price">5 562.90 грн.</span>
+                                    <span class="current-price">4 900.90 грн.</span>                      
+                                </div>
+    
+                                <button class="add-to-cart collect-btn"><span>Купити набором</span></button>                            
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="information-block">
+                    <div class="yellow-figure-rounded"></div>
+                    <span class="product-block-title">Характеристики</span>
+                    <div class="product-characteristics-table">
+
+                        <div class="row-characteristics">
+                            <span class="characteristics-title">Виробник</span>
+                            <span class="dotted-top-mg-12 void"></span>
+                            <span  class="characteristics-value green fw-700">MSD</span>
+                        </div>
+
+                        <div class="row-characteristics">
+                            <span class="characteristics-title">Країна</span>
+                            <span class="dotted-top-mg-12 void"></span>
+                            <span  class="characteristics-value">Нідерланди</span>
+                        </div>
+
+                        <div class="row-characteristics">
+                            <span class="characteristics-title">Категорія</span>
+                            <span class="dotted-top-mg-12 void"></span>
+                            <span  class="characteristics-value">Значення</span>
+                        </div>
+
+                        <div class="row-characteristics">
+                            <span class="characteristics-title">Підходить для</span>
+                            <span class="dotted-top-mg-12 void"></span>
+                            <span  class="characteristics-value green fw-700">
+                                <ul>
+                                    <li>Свині</li>
+                                    <li>Птиці</li>
+                                    <li>ВРХ</li>
+                                </ul>
+                            </span>
+                        </div>
+
+                        <div class="row-characteristics">
+                            <span class="characteristics-title">Кількість в упаковці</span>
+                            <span class="dotted-top-mg-12 void"></span>
+                            <span  class="characteristics-value">10 шт.</span>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="information-block">
+                    <div class="yellow-figure-rounded"></div>
+                    <span class="product-block-title">Про товар</span>
+
+                    <div class="text-about-product-block">
+                        <div class="text-group-about">
+                            <p class="sub-title fw-700">Склад</p>
+                            <p class="text">Активна речовина: білок 2 типу ORF2 цирковірусу свиней. Допоміжна речовина: карбомер.</p>
+                        </div>
+                        <div class="text-group-about">
+                            <p class="sub-title fw-700">Показання до застосування</p>
+                            <p class="text">Для активної імунізації свиней віком від 2-х тижнів проти 2 типу цирковірусу свиней (PCV2) з метою зниження смертності, зменшення клінічних ознак, включаючи втрату ваги, а також уражень в лімфатичних тканинах, пов'язаних із захворюванням, викликаним PCV2. Початок захисної дії спостерігається через 2 тижні після щеплення та триває протягом принаймні 17 тижнів.</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="place-for-btn-expand">
+                        <div class="btn-expand-text-about text-btn-green green fw-700">Показати все</div>
+                    </div>
+
+                </div>
+
+
+                <div  id="review-block" class="information-block">
+                    <div class="yellow-figure-rounded"></div>
+                    <span class="product-block-title">Відгуки покупців</span>
+
+                    <div class="review-product-block">
+
+                        <div class="review">
+                            <div class="review-part-top">
+                                <div class="rating">
+                                    <img src="./icon/star.svg" alt="">
+                                    <img src="./icon/star.svg" alt="">
+                                    <img src="./icon/star.svg" alt="">
+                                    <img src="./icon/star.svg" alt="">
+                                    <img src="./icon/star.svg" alt="">
+                                </div>
+                                <div class="review-autor">Ім’я Користувача</div>
+                                <div class="review-date">17.02.2023</div>
+                            </div>
+                            <div class="review-part-bottom">
+                                <p class="review-text">Дуже якісний препарат, користуємось ним більше шести років. Купуємо самі та радимо всім знайомим, які займаються розведенням свиней.</p>
+                            </div>
+                        </div>
+
+                        <div class="review">
+                            <div class="review-part-top">
+                                <div class="rating">
+                                    <img src="./icon/star.svg" alt="">
+                                    <img src="./icon/star.svg" alt="">
+                                    <img src="./icon/star.svg" alt="">
+                                    <img src="./icon/star.svg" alt="">
+                                    <img src="./icon/star.svg" alt="">
+                                </div>
+                                <div class="review-autor">Ім’я Користувача</div>
+                                <div class="review-date">17.02.2023</div>
+                            </div>
+                            <div class="review-part-bottom">
+                                <p class="review-text">Дуже якісний препарат, користуємось ним більше шести років. Купуємо самі та радимо всім знайомим, які займаються розведенням свиней.</p>
+                            </div>
+                        </div>
+
+                        <div class="review">
+                            <div class="review-part-top">
+                                <div class="rating">
+                                    <img src="./icon/star.svg" alt="">
+                                    <img src="./icon/star.svg" alt="">
+                                    <img src="./icon/star.svg" alt="">
+                                    <img src="./icon/star.svg" alt="">
+                                    <img src="./icon/star.svg" alt="">
+                                </div>
+                                <div class="review-autor">Ім’я Користувача</div>
+                                <div class="review-date">17.02.2023</div>
+                            </div>
+                            <div class="review-part-bottom">
+                                <p class="review-text">Дуже якісний препарат, користуємось ним більше шести років. Купуємо самі та радимо всім знайомим, які займаються розведенням свиней.</p>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="place-for-btn-review">
+                        <div class="btn-expand-review text-btn-green green fw-700">Показати ще 5 відгуків</div>
+                    </div>
+
+                    <div class="add-review-block">
+                        <div class="rating-select">
+                            <img src="./icon/star-empty.svg" alt="">
+                            <img src="./icon/star-empty.svg" alt="">
+                            <img src="./icon/star-empty.svg" alt="">
+                            <img src="./icon/star-empty.svg" alt="">
+                            <img src="./icon/star-empty.svg" alt="">
+                        </div>
+                        <h5>Залиште оцінку та відгук про товар</h5>
+                        <div class="btn-add-review">
+                            Написати відгук
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+            </div>
+       </div>
+    </div>
+</section>
+<script>
+
+document.querySelector('.btn-expand-text-about').addEventListener('click', function() {
+    const textBlock = document.querySelector('.text-about-product-block');
+    const button = this;
+
+    // Toggle класса 'expended' для блока с текстом
+    textBlock.classList.toggle('expended');
+    
+    // Toggle класса 'active' для кнопки
+    button.classList.toggle('active');
+
+    // Меняем текст на кнопке в зависимости от состояния
+    if (textBlock.classList.contains('expended')) {
+        button.textContent = 'Свернуть текст';
+    } else {
+        button.textContent = 'Развернуть текст';
+    }
+});
+</script>
+
+
+
+<section id="popular_product_section" class="section_block">
+    <div class="content">
+
+        <div class="section-title m-30-0">
+            <h2>З цим товаром також купують</h2>
+        </div>
+
+        <div class="swiper products-swiper">
+
+            <div class="swiper-wrapper">
+
+
+                
+                <div class="product-card swiper-slide">
+                    <div class="product-block-box">
+
+                        <div class="unusual-offers">
+                            
+                        </div>
+                        <div class="btn-add-to-favorite">
+                            <img class="btn-add-to-favorite-img" src="./icon/favorite_card.svg" alt="">
+                        </div>
+                        <img class="product-main-image" src="./images/product-card.png" alt="">
+                    </div>
+                    <div class="bottom-text-box">
+                        <div class="product-title mt-10 fw-700">Метрікюр® (коробка 10 шт), шт</div>
+                        <div class="product-block-bottom">
+                            <div class="product-price">
+                                <span>4 900.90 грн.</span>
+                            </div>
+                            <div class="btn-add-to-cart">
+                                <img src="./icon/shopping_cart_product.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card swiper-slide">
+                    <div class="product-block-box">
+
+                        <div class="unusual-offers">
+                            
+                        </div>
+                        <div class="btn-add-to-favorite">
+                            <img class="btn-add-to-favorite-img" src="./icon/favorite_card.svg" alt="">
+                        </div>
+                        <img class="product-main-image" src="./images/product-card.png" alt="">
+                    </div>
+                    <div class="bottom-text-box">
+                        <div class="product-title mt-10 fw-700">Метрікюр® (коробка 10 шт), шт</div>
+                        <div class="product-block-bottom">
+                            <div class="product-price">
+                                <span>4 900.90 грн.</span>
+                            </div>
+                            <div class="btn-add-to-cart">
+                                <img src="./icon/shopping_cart_product.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card swiper-slide">
+                    <div class="product-block-box">
+
+                        <div class="unusual-offers">
+                            
+                        </div>
+                        <div class="btn-add-to-favorite">
+                            <img class="btn-add-to-favorite-img" src="./icon/favorite_card.svg" alt="">
+                        </div>
+                        <img class="product-main-image" src="./images/product-card.png" alt="">
+                    </div>
+                    <div class="bottom-text-box">
+                        <div class="product-title mt-10 fw-700">Метрікюр® (коробка 10 шт), шт</div>
+                        <div class="product-block-bottom">
+                            <div class="product-price">
+                                <span>4 900.90 грн.</span>
+                            </div>
+                            <div class="btn-add-to-cart">
+                                <img src="./icon/shopping_cart_product.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card swiper-slide">
+                    <div class="product-block-box">
+
+                        <div class="unusual-offers">
+                            
+                        </div>
+                        <div class="btn-add-to-favorite">
+                            <img class="btn-add-to-favorite-img" src="./icon/favorite_card.svg" alt="">
+                        </div>
+                        <img class="product-main-image" src="./images/product-card.png" alt="">
+                    </div>
+                    <div class="bottom-text-box">
+                        <div class="product-title mt-10 fw-700">Метрікюр® (коробка 10 шт), шт</div>
+                        <div class="product-block-bottom">
+                            <div class="product-price">
+                                <span>4 900.90 грн.</span>
+                            </div>
+                            <div class="btn-add-to-cart">
+                                <img src="./icon/shopping_cart_product.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               
+
+                <div class="product-card swiper-slide">
+                    <div class="product-block-box">
+
+                        <div class="unusual-offers">
+                            
+                        </div>
+                        <div class="btn-add-to-favorite">
+                            <img class="btn-add-to-favorite-img" src="./icon/favorite_card.svg" alt="">
+                        </div>
+                        <img class="product-main-image" src="./images/product-card.png" alt="">
+                    </div>
+                    <div class="bottom-text-box">
+                        <div class=".product-title mt-10 fw-700">Метрікюр® (коробка 10 шт), шт</div>
+                        <div class="product-block-bottom">
+                            <div class="product-price">
+                                <span>4 900.90 грн.</span>
+                            </div>
+                            <div class="btn-add-to-cart">
+                                <img src="./icon/shopping_cart_product.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div> 
+</section>
+
+
+
+<section id="lookerd_product_section" class="section_block">
+    <div class="content">
+
+        <div class="section-title m-30-0">
+            <h2>Ви переглядали</h2>
+        </div>
+
+        <div class="swiper products-swiper">
+
+            <div class="swiper-wrapper">
+
+
+                
+                <div class="product-card swiper-slide">
+                    <div class="product-block-box">
+
+                        <div class="unusual-offers">
+                            
+                        </div>
+                        <div class="btn-add-to-favorite">
+                            <img class="btn-add-to-favorite-img" src="./icon/favorite_card.svg" alt="">
+                        </div>
+                        <img class="product-main-image" src="./images/product-card.png" alt="">
+                    </div>
+                    <div class="bottom-text-box">
+                        <div class="product-title mt-10 fw-700">Метрікюр® (коробка 10 шт), шт</div>
+                        <div class="product-block-bottom">
+                            <div class="product-price">
+                                <span>4 900.90 грн.</span>
+                            </div>
+                            <div class="btn-add-to-cart">
+                                <img src="./icon/shopping_cart_product.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-card swiper-slide">
+                    <div class="product-block-box">
+
+                        <div class="unusual-offers">
+                            
+                        </div>
+                        <div class="btn-add-to-favorite">
+                            <img class="btn-add-to-favorite-img" src="./icon/favorite_card.svg" alt="">
+                        </div>
+                        <img class="product-main-image" src="./images/product-card.png" alt="">
+                    </div>
+                    <div class="bottom-text-box">
+                        <div class="product-title mt-10 fw-700">Метрікюр® (коробка 10 шт), шт</div>
+                        <div class="product-block-bottom">
+                            <div class="product-price">
+                                <span>4 900.90 грн.</span>
+                            </div>
+                            <div class="btn-add-to-cart">
+                                <img src="./icon/shopping_cart_product.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div> 
+</section>
+
+<!-- //footer -->
+<footer>
+    <div class="content footer-content">
+        <div class="top-part-footer grid-footer-top">
+
+            <div class="footer-col-top">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <span class="text-after-logo">Приєднуйтесь до нас 
+                    в соцмережах</span>
+                <div class="useful-links">
+                    <a href="#"><img src="./icon/f1.svg" alt=""></a>
+                    <a href="#"><img src="./icon/f2.svg" alt=""></a>
+                </div>
+            </div>
+
+
+            <div class="footer-col-top">
+                <span class="menu-title">Каталог</span>
+                <ul class="">
+                    <li><a href="#">Для птиці</a></li>
+                    <li><a href="#">Для свиней</a></li>
+                    <li><a href="#">Для ВРХ</a></li>
+                    <li><a href="#">Обладнання</a></li>
+                    <li><a href="#">Біобезпека</a></li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="footer-col-top">
+                <span class="menu-title">Про магазин</span>
+                <ul class="">
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Бренди</a></li>
+                    <li><a href="#">Новини</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-top">
+                <span class="menu-title">Інформація</span>
+                <ul class="">
+                    <li><a href="#">Обмін і повернення</a></li>
+                    <li><a href="#">Доставка та оплата</a></li>
+                    <li><a href="#">Програма лояльності</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-top">
+                <span class="menu-title">Зв’язатися з нами</span>
+
+                <div class="footer-contact-us">
+                    <span class="adress">
+                        81130, Україна, Львівська обл., 
+                        с.Сокільники, вул.Львівська бічна, 3
+                    </span>
+                    <span class="email">
+                        info@vetagro.com.ua
+                    </span>
+                    <span class="tel">
+                        +38 (067) 673 16 67
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="bottom-part-footer">
+            <div class="bottom-left-part-footer">
+                <span>
+                    <a href="#">Політика конфіденційності</a>
+                </span>
+                <span>
+                    <a href="#">Договір публічної оферти</a>
+                </span>
+            </div>
+            <div class="bottom-right-part-footer">
+                <img src="./images/by_sofenty.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+
+<script>
+
+    var swiper = new Swiper(".productImgSwiper", {
+      spaceBetween: 10,
+      slidesPerView: 4,
+      freeMode: true,
+      watchSlidesProgress: true,
+    });
+
+    var swiper2 = new Swiper(".productImgSwiper2", {
+        spaceBetween: 10,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            enabled: false,
+        },
+        pagination: {
+                el: ".swiper-pagination",
+                clickable: false,
+                enabled: true
+            },
+        thumbs: {
+            swiper: swiper,
+        },
+        breakpoints: {
+            1000: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+                navigation: {
+                    enabled: true,
+                },
+                pagination: {
+                    enabled: false,
+                },
+            },
+        },
+    });
+</script>
+
+
+
+<script>
+    var swiper = new Swiper(".products-swiper", {
+        slidesPerView: 2,
+        spaceBetween: 20,
+        freeMode: false,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+                enabled: false,
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+            500: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+                navigation: {
+                    enabled: false,
+                },
+                pagination: {
+                    enabled: true,
+                },
+            },
+            700: {
+                slidesPerView: 3,
+                spaceBetween: 20,
+                navigation: {
+                    enabled: true,
+                },
+                pagination: {
+                    enabled: false,
+                },
+            },
+            1200: {
+                slidesPerView: 4,
+                spaceBetween: 20,
+                navigation: {
+                    enabled: true,
+                },
+                pagination: {
+                    enabled: false,
+                },
+            },
+        },
+    });
+  </script>
+
+
+</body>
+</html>

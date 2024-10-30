@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about-us</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./assets/form.css">
+    <link rel="stylesheet" href="./assets/about-us.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+<nav class="desktop">
+    <div class="content">
+        <div class="top-menu-block">
+            <ul class="top-menu">
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Новини</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Бренди</a></li>
+                <li><a href="#">Доставка та оплата</a></li>
+                <li><a href="#">Обмін і повернення</a></li>
+            </ul>
+
+            <div class="support-block">
+                <div class="contact-phone">
+                    <a href="tel:+38 (067) 673 16 67">+38 (067) 673 16 67</a>
+                </div>
+                <div class="language-select">
+                    <span>Мова</span>
+                    <span class="flag"><img src="./icon/Ukraine (UA).svg" alt=""></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>
+<header>
+    <div class="content header-content">
+        <div class="header-block desktop">
+
+            <img src="./images/logo.png" alt="">
+
+
+            <div class="main-menu-block">
+                <ul class="main-menu">
+                    <li><a href="#">Для птиці</a></li>
+                    <li><a href="#">Для свиней</a></li>
+                    <li><a href="#">Для ВРХ</a></li>
+                    <li><a href="#">Обладнання</a></li>
+                    <li><a href="#">Біобезпека</a></li>
+                </ul>
+            </div>
+
+            <div class="header-shop-panel">
+                <div class="header-shop-block">
+                    <div class="header-search desktop">
+                        <input class="header-search-input" type="text" placeholder="Пошук">
+                    </div>
+                    <div class="header-shop-buttons">
+                        <span><img src="./icon/favorite.svg" alt=""></span>
+                        <span><img src="./icon/person.svg" alt=""></span>
+                        <span>
+                            <img class="showCart" src="./icon/shopping_cart.svg" alt="">
+                        </span>
+                        <span class="close-btn mobile">
+                            <img class="showClose" src="./icon/x.svg" alt="">
+                        </span>
+                        
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="header-block mobile">
+
+            <div class="main-menu-block ">
+                <nav class="main-nav hamburger-menu">
+
+                      <input id="menu__toggle" type="checkbox" />
+                      <label class="menu__btn" for="menu__toggle">
+                        <span></span>
+                      </label>
+                    
+
+                        <div class="menu__box">
+
+                            <div class="header-block mobile  menu-mobile">
+
+                                <div class="header-shop-block">
+                                    <div class="header-shop-buttons">
+                                        <span><img src="./icon/person.svg" alt=""><span class="person-title">Увійти до кабінету</span></span>
+                                        <span><img src="./icon/favorite.svg" alt=""></span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <div class="header-search mobile">
+                                <input class="header-search-input" type="text" placeholder="Пошук">
+                            </div>
+                            <div class="mobile-menus-place">
+                                <div class="place-for-mobile-menu">
+                                    <div class="content">
+                                        <h3>Каталог товарів</h3>
+                                        <ul class="main-menu">
+                                            <li><a href="#">Для птиці</a></li>
+                                            <li><a href="#">Для свиней</a></li>
+                                            <li><a href="#">Для ВРХ</a></li>
+                                            <li><a href="#">Обладнання</a></li>
+                                            <li><a href="#">Біобезпека</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="place-for-mobile-menu">
+                                    <div class="content">
+                                        <h3>Інформація</h3>
+                                        <ul class="support-menu">
+                                            <li><a href="#">Про нас</a></li>
+                                            <li><a href="#">Новини</a></li>
+                                            <li><a href="#">Контакти</a></li>
+                                            <li><a href="#">Бренди</a></li>
+                                            <li><a href="#">Доставка та оплата</a></li>
+                                            <li><a href="#">Обмін і повернення</a></li>
+                                        </ul>
+                                        <div class="language-select">
+                                            <span>Мова</span>
+                                            <span class="flag"><img src="./icon/Ukraine (UA).svg" alt=""></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                </nav>
+            </div>
+
+
+            <img src="./images/logo.png" alt="">
+
+            <div class="header-shop-panel">
+                <div class="header-shop-block">
+                    <div class="header-shop-buttons">
+                        <span>
+                            <img class="showCart" src="./icon/shopping_cart.svg" alt="">
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</header>
+<script>
+    document.querySelector('.close-btn').addEventListener('click', function() {
+        this.classList.toggle('active');
+    });
+</script>
+
+
+
+
+
+<section class="section_block">
+    <div class="content">
+        <h1>Про нас</h1>
+
+        <div class="information-block">
+            <div class="yellow-figure-rounded"></div>
+
+            <div class="our-history-grid">
+                <div class="titles-block">
+                    <h2>Наша історія</h2>
+                </div>
+                <div class="text-block">
+                    <p>«ВетАгро» є ветеринарною компанією, яка надає спектр послуг по оздоровленню господарства. 
+                        Ми пропонуємо індивідуальні програми оптимізації вирощування сільськогосподарських тварин та птиці, а також забезпечуємо наших клієнтів високоякісними ветеринарними препаратами, надаючи кваліфіковану консультацію щодо їх використання.
+                        Ми будуємо довгострокові відносини з нашими клієнтами, задовольняємо потреби кожного замовника і допомогаємо вирішити  проблеми, тим самим покращуючи ваш прибуток.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+
+
+<section class="section_block">
+    <div class="content">
+        
+        <div class="information-block bg-image" style="background-image: url('./images/about-us1.png');">
+            <h4>Важливі для нас цифри:</h4>
+            <div id="counter">
+
+                <div class="bl">
+                    <div data-num="2005" class="number">0</div>
+                    <h3 class="text">рік заснування</h3>
+                </div>
+
+                <div class="bl">
+                    <div data-num="2000" class="number with-plus">0</div>
+                    <h3 class="text">задоволених клієнтів</h3>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+</section>
+<script>
+
+const targetElement = document.querySelector('#counter');
+function handleIntersection(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Элемент в зоне видимости, запускаем функцию
+      yourFunction();
+      observer.unobserve(entry.target);
+    }
+  });
+}
+
+const observer = new IntersectionObserver(handleIntersection, {
+  root: null, 
+  rootMargin: '0px',
+  threshold: 0.5
+});
+
+observer.observe(targetElement);
+
+function yourFunction() {
+    document.querySelectorAll('div').forEach(function(div) {
+        let i = 1,
+        num = div.getAttribute('data-num'),
+        time = 10,
+        step = 1000 * time / num,
+        plus = 5,
+        interval = setInterval(function() {
+            if (i + plus <= num) {
+                div.innerHTML = i;
+            } else if(i <= num) {
+                plus--;
+                div.innerHTML = i;
+            }
+            else{
+                clearInterval(interval);
+            }
+            i += plus;
+        }, step);
+    });
+}
+
+</script>
+
+
+
+<section class="section_block">
+    <div class="content">
+        
+        <div class="information-block">
+
+            <div class="place-for-quote">
+                <div class="quote-block">
+                    <h3 class="the-quote text-center">Наша місія - постійно покращувати здоров’я людей через піклування про здоров’я тварин.</h3>
+                    <div class="quote-author mt-20">
+                        <p class="small-text-author">Ім’я Прізвще</p>
+                        <p class="small-text-author">засновник “ВетАгро”</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<section class="section_block">
+    <div class="content">
+
+        <div class="our-benefits-block">
+
+
+            <div class="current-benefit">
+                <img class="image-benefit" src="./icon/benefit1.svg" alt="">
+                <div class="text-benefit">
+                    <h4>Стабільність</h4>
+                    <p>Ми зарекомендували себе <br>
+                    як стабільні та надійні партнери</p>
+                </div>
+            </div>
+
+            <div class="current-benefit">
+                <img class="image-benefit" src="./icon/benefit2.svg" alt="">
+                <div class="text-benefit">
+                    <h4>Професіоналізм</h4>
+                    <p>Наші менеджери - кваліфіковані <br>
+                        лікарі-ветеринари</p>
+                </div>
+            </div>
+
+
+            <div class="current-benefit">
+                <img class="image-benefit" src="./icon/benefit3.svg" alt="">
+                <div class="text-benefit">
+                    <h4>Якість</h4>
+                    <p>Ми пропонуємо лише<br>
+                        високоякісні, перевірені препарати</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section class="section_block">
+    <div class="content">
+        <h1>Про нас</h1>
+
+        <div class="information-block">
+            <div class="yellow-figure-rounded"></div>
+
+            <div class="our-history-grid">
+                <div class="titles-block">
+                    <h2>Ми надаємо послуги</h2>
+                </div>
+                <div class="content-block">
+                    <p>На сьогоднішній день «ВетАгро» працює в двох напрямках – сільськогосподарському та напрямку дрібних тварин.</p>
+
+                    <h4>По свинарству:</h4>
+                    <p>Проводимо аудит роботи свиноферми, а саме: </p>
+
+                    <ul>
+                        <li>аналізуємо Вашу систему роботи і пропонуємо шляхи вирішення і покращення результатів роботи. </li>
+                        <li>проводимо роботу з персоналом ферми. </li>
+                        <li>аналізуємо Вашу систему роботи і пропонуємо шляхи вирішення і покращення результатів роботи. 
+                            проводимо роботу з персоналом ферми. 
+                            допомагаємо впровадити системну роботу по таких секціях: – станція хряків (відбір сперми , перевірка якості сперми, осіменіння) – індивідуальні станки – родильні станки – ремонтні групи тварин – робота з кондицією свиноматки Надаємо індивідуальні програми оздоровлення ферми з оптимізацію витрат та покращенням результатів виробництва. 
+                            проводимо аналіз якості води</li>
+                        <li>проводимо аналіз якості води</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+</section>
+
+
+
+
+<!-- //footer -->
+<footer>
+    <div class="content footer-content">
+        <div class="top-part-footer grid-footer-top">
+
+            <div class="footer-col-top">
+                <div class="logo">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <span class="text-after-logo">Приєднуйтесь до нас 
+                    в соцмережах</span>
+                <div class="useful-links">
+                    <a href="#"><img src="./icon/f1.svg" alt=""></a>
+                    <a href="#"><img src="./icon/f2.svg" alt=""></a>
+                </div>
+            </div>
+
+
+            <div class="footer-col-top">
+                <span class="menu-title">Каталог</span>
+                <ul class="">
+                    <li><a href="#">Для птиці</a></li>
+                    <li><a href="#">Для свиней</a></li>
+                    <li><a href="#">Для ВРХ</a></li>
+                    <li><a href="#">Обладнання</a></li>
+                    <li><a href="#">Біобезпека</a></li>
+                </ul>
+            </div>
+
+
+
+
+            <div class="footer-col-top">
+                <span class="menu-title">Про магазин</span>
+                <ul class="">
+                    <li><a href="#">Про нас</a></li>
+                    <li><a href="#">Контакти</a></li>
+                    <li><a href="#">Бренди</a></li>
+                    <li><a href="#">Новини</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-top">
+                <span class="menu-title">Інформація</span>
+                <ul class="">
+                    <li><a href="#">Обмін і повернення</a></li>
+                    <li><a href="#">Доставка та оплата</a></li>
+                    <li><a href="#">Програма лояльності</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col-top">
+                <span class="menu-title">Зв’язатися з нами</span>
+
+                <div class="footer-contact-us">
+                    <span class="adress">
+                        81130, Україна, Львівська обл., 
+                        с.Сокільники, вул.Львівська бічна, 3
+                    </span>
+                    <span class="email">
+                        info@vetagro.com.ua
+                    </span>
+                    <span class="tel">
+                        +38 (067) 673 16 67
+                    </span>
+                </div>
+            </div>
+
+        </div>
+        <div class="bottom-part-footer">
+            <div class="bottom-left-part-footer">
+                <span>
+                    <a href="#">Політика конфіденційності</a>
+                </span>
+                <span>
+                    <a href="#">Договір публічної оферти</a>
+                </span>
+            </div>
+            <div class="bottom-right-part-footer">
+                <img src="./images/by_sofenty.png" alt="">
+            </div>
+        </div>
+    </div>
+</footer>
